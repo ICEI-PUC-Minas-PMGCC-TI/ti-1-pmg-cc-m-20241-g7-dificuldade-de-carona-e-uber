@@ -1,18 +1,27 @@
-# Nome do projeto
+# Caroneiros
 
 Escreva um ou dois parágrafo resumindo o objetivo do seu projeto.
 
+O Caroneiros vêm como uma solução para os universitários quanto à dificuldade de se locomover e sem gastar muito para ir e voltar da faculdade.
+Somado a isso, os jovens tem a rica oportunidade de conhecerem melhor seus colegas, sejam eles calouros ou veteranos, além do conforto de viajar de forma rápida, segura, e sem se preocupar com grandes gastos semanais, 
+já que o único agora será do preço da carona, a qual você, o motorista, e se houver outros colegas, combinar de dividir!
+Aperte os cintos e se prepare para se tornar um Caroneiro!
+
 ## Alunos integrantes da equipe
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Felipe Barros Ratton de Almeida
+* Bruno Alejandro Monteiro Commisso Coelho 
+* David Alves Mares Costa 
+* Otávio Augusto de Assis Ferreira Monteiro 
+* Bruna Furtado da Fonseca
+* Marcella Santos Belchior
+* Ravy Lima Ribeiro 
 
 ## Professores responsáveis
 
-* Nome completo do professor 1
-* Nome completo do professor 2
+* Rommel Vieira Carneiro
+* Luciana Mara Freitas Diniz
+* João Carlos Oliveira Caetano
 
 ## Instruções de utilização
 
