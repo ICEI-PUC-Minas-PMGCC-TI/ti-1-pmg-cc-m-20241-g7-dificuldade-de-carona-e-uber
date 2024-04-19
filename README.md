@@ -22,6 +22,7 @@ Aperte os cintos e se prepare para se tornar um Caroneiro!
 * Rommel Vieira Carneiro
 * Luciana Mara Freitas Diniz
 * João Carlos Oliveira Caetano
+* Pedro Henrique Ramos Costa
 
 ## Instruções de utilização
 
