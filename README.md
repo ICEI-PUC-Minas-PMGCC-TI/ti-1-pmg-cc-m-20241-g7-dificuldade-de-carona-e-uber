@@ -1,6 +1,5 @@
 # Caroneiros
 
-Escreva um ou dois parágrafo resumindo o objetivo do seu projeto.
 
 O Caroneiros vêm como uma solução para os universitários quanto à dificuldade de se locomover e sem gastar muito para ir e voltar da faculdade.
 Somado a isso, os jovens tem a rica oportunidade de conhecerem melhor seus colegas, sejam eles calouros ou veteranos, além do conforto de viajar de forma rápida, segura, e sem se preocupar com grandes gastos semanais, 
