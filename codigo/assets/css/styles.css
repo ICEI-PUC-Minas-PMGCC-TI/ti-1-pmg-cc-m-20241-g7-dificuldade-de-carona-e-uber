@@ -1,0 +1,385 @@
+/*ESTILO GERAL*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    box-sizing:border-box;
+}
+
+body{
+    background-color: #012340;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 2000px;
+    margin: 10 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+/*ESTILO HEADER*/
+
+header{
+    
+    background-color: #012340;
+    position: fixed; 
+    display:block;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-left: 120px;
+    padding-right: 120px;
+    margin-left: 0;
+    margin-right: 0;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);
+}
+
+@media (max-width: 1300px) {
+    header {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 560px) {
+    header {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+@media (max-width: 560px) {
+    header > .interface{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+header a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    transition: .4s;
+}
+
+header a:hover{
+    color:#427fa5;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+@media (max-width: 1130px) {
+    header nav ul li{
+    display: inline-block;
+    padding: 0 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+    header nav ul li{
+    display: inline-block;
+    padding: 0 10px;
+    }
+}
+
+header .cadastro-login button{
+    font-size: 15px;
+    justify-content: flex-end;
+    padding:10px 20px;
+    border-radius: 15px;
+    border: 10;
+    border-color: #fff;
+    outline: none;
+    cursor: pointer;
+    box-sizing: inherit;
+    max-width: 160px;
+    background-color: #20638c;
+    color: #fff;
+    box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 20%);
+}
+
+header .cadastro-login button:hover{
+    background-color: #154b6d;
+    box-shadow: 0px 0px 12px rgb(0 0 0 / 40%);
+}
+
+@media (max-width: 560px) {
+    header .cadastro-login button{
+        padding:5px 10px
+    }
+}
+
+.logo{
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    box-sizing: inherit;
+    max-width: 160px;
+
+}
+
+.caroneiros{
+    width: 200px;
+    padding: 10px;
+}
+
+@media (max-width: 900px) {
+    .caroneiros{
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .menu-desktop {
+        display: none;
+    }
+}
+
+.menu-mobile{
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .menu-mobile {
+        display: flex;
+    }
+
+    .sub-menu{
+        padding: 0;
+        flex-direction: column;
+        white-space: nowrap;
+        transition-timing-function: ease-in-out;
+        transition-property: visibility, opacity;
+        visibility: hidden;
+        opacity: 0;
+        display: flex;
+        position: absolute;
+        top: 100%;
+    }
+    
+}
+
+/*MAIN - TOPO DO SITE*/
+
+
+section.topo-do-site{
+    padding: 100px 10%;
+    display: flex;
+    align-items: center;
+    min-height: 600px;
+    background: url(https://i.pinimg.com/736x/2b/12/5d/2b125dc794d028e10b5939a71e0e6bb8.jpg) no-repeat;
+    background-size: cover;
+    background-position: 0 70px;
+
+}
+
+@media (max-width: 840px) {
+    section.topo-do-site{
+        display: flex;
+        align-items: center;
+        background: url(https://i.pinimg.com/474x/4e/d0/83/4ed083ead0e42550e121385e337ad90c.jpg) no-repeat;
+        background-size: cover;
+        background-position: 0 70px;
+    }
+    section .txt-topo-site{
+        text-align: center;
+    }
+}
+
+section .txt-topo-site{
+    font-weight: bold;
+}
+
+section.txt-topo-site, .titulo, .texto{
+    color:#fff;
+    text-shadow: 1px 3px 5px #000000;
+    
+}
+
+section .subtitulo{
+    color:#20638c;
+    font-size: 30px;
+    text-shadow: 1px 3px 5px #012340;
+}
+
+.txt-topo-site .titulo{
+    font-size: 40px;
+}
+
+.txt-topo-site .texto{
+    font-size: 25px;
+    line-height: 40px;
+    }
+
+section .topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+}
+
+section.topo-do-site .botao-comece-a-viajar button{
+    font-size: 20px;
+    justify-content: flex-end;
+    padding:10px 20px;
+    border-radius: 15px;
+    border: 10;
+    border-color: #fff;
+    outline: none;
+    cursor: pointer;
+    box-sizing: inherit;
+    background-color: #20638c;
+    color: #fff;
+    box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 20%);
+    transition: .4s;
+}
+
+section.topo-do-site .botao-comece-a-viajar button:hover{
+    background-color: #154b6d;
+    box-shadow: 0px 0px 12px rgb(0 0 0 / 40%);
+    transform: scale(1.05);
+}
+
+/*Contribua*/
+section.contribua{
+    display:block;
+}
+
+section.contribua .txt-contribua{
+    padding: 60px 6%;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 2px 6px #000000;
+    justify-content: center;
+}
+
+section.contribua .txt-contribua .titulo{
+    font-size: 40px;
+}
+
+section.contribua .txt-contribua .sub-titulo{
+    font-size: 25px;
+    
+}
+
+/*Flex: img e possibilidades*/
+section.contribua .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+
+/*descritiva*/
+
+section.contribua .img-descritiva img{
+    box-shadow: 0px 0px 12px rgb(0 0 0 / 40%);
+}
+
+
+.txt-descritiva p{
+    color: #fff; 
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+}
+
+
+/*Lista de possibilidades*/
+
+section #lista-de-possibilidades{
+    text-align:left;
+    color: #fff;
+}
+
+section #lista-de-possibilidades .titulo-possibilidades{
+    font-size: 27px;
+    text-shadow: 1px 2px 6px #000000;
+    
+}
+
+section #lista-de-possibilidades .possibilidades{
+    list-style: circle;
+    font-size: 22px;
+    line-height: 40px;
+}
+
+section #lista-de-possibilidades .possibilidades .sub-lista{
+    line-height: 30px;
+}
+
+/*Botão Viajar*/
+section.contribua .botao-viajar button{
+    padding:10px 20px;
+    font-size: 20px;
+    border-radius: 15px;
+    border: 10;
+    border-color: #fff;
+    outline: none;
+    cursor: pointer;
+    box-sizing: inherit;
+    background-color: #20638c;
+    color: #fff;
+    box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 20%);
+    transition: .4s;   
+    margin: 0 auto;
+    display: block;
+}
+
+section.contribua .botao-viajar button:hover{
+background-color: #154b6d;
+box-shadow: 0px 0px 12px rgb(0 0 0 / 40%);
+transform: scale(1.05);
+}
+
+/*VANTAGENS*/
+
+section.vantagens .txt-vantagens{
+    padding: 60px 6%;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 2px 6px #000000;
+    justify-content: center;
+}
+
+section.vantagens .txt-vantagens .titulo{
+    font-size: 40px;
+}
