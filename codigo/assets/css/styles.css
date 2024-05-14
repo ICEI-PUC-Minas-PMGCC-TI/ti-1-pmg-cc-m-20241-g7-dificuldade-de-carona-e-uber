@@ -14,8 +14,12 @@ body{
 }
 
 .interface{
-    max-width: 2000px;
-    margin: 10 auto;
+    max-width: 1350px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .flex{
@@ -25,7 +29,6 @@ body{
 /*ESTILO HEADER*/
 
 header{
-    
     background-color: #012340;
     position: fixed; 
     display:block;
@@ -139,32 +142,25 @@ header .cadastro-login button:hover{
     box-shadow: 0px 0px 12px rgb(0 0 0 / 40%);
 }
 
-@media (max-width: 560px) {
-    header .cadastro-login button{
-        padding:5px 10px
-    }
-}
-
-.logo{
+header .logo{
     justify-content: flex-start;
     display: flex;
     align-items: center;
     border: none;
     outline: none;
     cursor: pointer;
-
     box-sizing: inherit;
     max-width: 160px;
-
 }
 
-.caroneiros{
+header .logo .caroneiros img{
     width: 200px;
     padding: 10px;
+    padding-top: 12px;
 }
 
 @media (max-width: 900px) {
-    .caroneiros{
+    header.logo .caroneiros img{
         padding-left: 20px;
     }
 }
@@ -189,7 +185,6 @@ header .cadastro-login button:hover{
         flex-direction: column;
         white-space: nowrap;
         transition-timing-function: ease-in-out;
-        transition-property: visibility, opacity;
         visibility: hidden;
         opacity: 0;
         display: flex;
@@ -199,41 +194,43 @@ header .cadastro-login button:hover{
     
 }
 
+@media (max-width: 560px) {
+    header .cadastro-login button{
+        font-size: 13.5px;
+        padding:7.5px 8px;
+    }
+    header .logo .caroneiros img{
+        width: 167px;  
+    }
+}
+
 /*MAIN - TOPO DO SITE*/
 
-
 section.topo-do-site{
-    padding: 100px 10%;
-    display: flex;
-    align-items: center;
-    min-height: 600px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
     background: url(https://i.pinimg.com/736x/2b/12/5d/2b125dc794d028e10b5939a71e0e6bb8.jpg) no-repeat;
+    min-height: 700px;
     background-size: cover;
     background-position: 0 70px;
 
 }
 
-@media (max-width: 840px) {
-    section.topo-do-site{
-        display: flex;
-        align-items: center;
-        background: url(https://i.pinimg.com/474x/4e/d0/83/4ed083ead0e42550e121385e337ad90c.jpg) no-repeat;
-        background-size: cover;
-        background-position: 0 70px;
-    }
-    section .txt-topo-site{
-        text-align: center;
-    }
-}
-
-section .txt-topo-site{
+section.topo-do-site .txt-topo-site{
     font-weight: bold;
 }
 
-section.txt-topo-site, .titulo, .texto{
+section.topo-do-site .txt-topo-site :is(.titulo, .texto){
     color:#fff;
     text-shadow: 1px 3px 5px #000000;
     
+}
+
+.txt-topo-site .titulo{
+    margin-top: 32px;
+    font-size: 60px;
 }
 
 section .subtitulo{
@@ -242,18 +239,12 @@ section .subtitulo{
     text-shadow: 1px 3px 5px #012340;
 }
 
-.txt-topo-site .titulo{
-    font-size: 40px;
-}
-
-.txt-topo-site .texto{
+section.topo-do-site .txt-topo-site .texto{
     font-size: 25px;
     line-height: 40px;
-    }
-
-section .topo-do-site .flex{
-    align-items: center;
-    justify-content: center;
+    margin-bottom: 22px;
+    width: 600px;
+    font-weight: 300;
 }
 
 section.topo-do-site .botao-comece-a-viajar button{
@@ -278,30 +269,85 @@ section.topo-do-site .botao-comece-a-viajar button:hover{
     transform: scale(1.05);
 }
 
+@media (max-width: 840px) {
+    section.topo-do-site{      
+        background: url(https://i.pinimg.com/474x/4e/d0/83/4ed083ead0e42550e121385e337ad90c.jpg) no-repeat;
+        min-height: 700px;
+        background-size: cover;
+        background-position: 0 70px;
+    }
+    section.topo-do-site .txt-topo-site{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-right: 20px;
+        padding-left: 20px;
+        width: 100%;
+    }
+    section.topo-do-site .txt-topo-site .texto{
+        width: 100%;
+    }
+}
+
+@media (max-width: 520px) {
+    section.topo-do-site{      
+        min-height: 300px;
+        padding-top: 70px;
+        padding-bottom: 30px;
+    }
+    section.topo-do-site .txt-topo-site .titulo{
+        font-size: 36px;
+        margin-top: 19.2px;
+    }
+    section.topo-do-site .txt-topo-site .subtitulo{
+        font-size: 18px;
+    }
+    section.topo-do-site .txt-topo-site .texto{
+        font-size: 15px;
+        line-height: 24px;
+    }
+    section.topo-do-site .botao-comece-a-viajar button{
+        font-size: 12px;
+        padding:6px 12px;
+    }
+}
+
 /*Contribua*/
-section.contribua{
+
+section .contribua{
     display:block;
 }
 
 section.contribua .txt-contribua{
-    padding: 60px 6%;
+    padding-top: 40px;
     text-align: center;
     color: #fff;
     text-shadow: 1px 2px 6px #000000;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 section.contribua .txt-contribua .titulo{
     font-size: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
 }
 
 section.contribua .txt-contribua .sub-titulo{
     font-size: 25px;
-    
+    width: 80%;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 /*Flex: img e possibilidades*/
 section.contribua .flex{
+    padding: 60px 6%;
     align-items: center;
     justify-content: center;
     gap: 150px;
@@ -311,10 +357,21 @@ section.contribua .flex{
 
 section.contribua .img-descritiva img{
     box-shadow: 0px 0px 12px rgb(0 0 0 / 40%);
+    width: 500px;
 }
 
+@media (max-width: 550px) {
+    section.contribua .img-descritiva{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    section.contribua .img-descritiva img{
+        max-width: 100%;
+        height: auto;
+    }
+}
 
-.txt-descritiva p{
+section.contribua .txt-descritiva{
     color: #fff; 
     font-size: 25px;
     font-weight: bold;
@@ -330,16 +387,36 @@ section #lista-de-possibilidades{
     color: #fff;
 }
 
+@media (max-width: 1153px) {
+    section.contribua .flex{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+    }
+    section #lista-de-possibilidades .titulo-possibilidades{
+        text-align: center;
+    }
+    section #lista-de-possibilidades{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
 section #lista-de-possibilidades .titulo-possibilidades{
+    padding-bottom: 10px;
     font-size: 27px;
     text-shadow: 1px 2px 6px #000000;
-    
 }
 
 section #lista-de-possibilidades .possibilidades{
     list-style: circle;
     font-size: 22px;
     line-height: 40px;
+}
+
+section #lista-de-possibilidades .possibilidades li{
+    padding-bottom: 6px;
 }
 
 section #lista-de-possibilidades .possibilidades .sub-lista{
@@ -370,6 +447,51 @@ box-shadow: 0px 0px 12px rgb(0 0 0 / 40%);
 transform: scale(1.05);
 }
 
+@media (max-width: 540px) {
+    section.contribua .flex{
+        padding: 25px 6%;
+        gap: 30px;
+    }
+    section.contribua .txt-contribua{
+        padding-top: 24px;
+    }
+    
+    section.contribua .txt-contribua .titulo{
+        font-size: 24px;
+        padding-right: 12px;
+        padding-left: 12px;
+        padding-bottom: 5px;
+    }
+    section.contribua .txt-contribua .sub-titulo{
+        font-size: 16px;
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+    section.contribua .txt-descritiva{
+        font-size: 15px;
+        line-height: 24px;
+    }
+    section #lista-de-possibilidades .titulo-possibilidades{
+        padding-bottom: 10px;
+        font-size: 18.5px;
+    }
+    section #lista-de-possibilidades .possibilidades{
+        font-size: 15px;
+        line-height: 20px;  
+    }
+    section #lista-de-possibilidades .possibilidades li{
+        padding-bottom: 10px;
+    }
+    
+    section #lista-de-possibilidades .possibilidades .sub-lista{
+        line-height: 20px;
+    }
+    section.contribua .botao-viajar button{
+        font-size: 13.5px;
+        padding:7.5px 15px;
+    }
+}
+
 /*VANTAGENS*/
 
 section.vantagens .txt-vantagens{
@@ -382,4 +504,18 @@ section.vantagens .txt-vantagens{
 
 section.vantagens .txt-vantagens .titulo{
     font-size: 40px;
+}
+
+@media (max-width: 540px) {
+    section.vantagens .txt-vantagens{
+        padding: 25px 6%;
+        text-align: center;
+        color: #fff;
+        text-shadow: 1px 2px 6px #000000;
+        justify-content: center;
+    }
+    
+    section.vantagens .txt-vantagens .titulo{
+        font-size: 24px;
+    }
 }
