@@ -1,3 +1,11 @@
+/* REGRAS CSS:
+1- Seguir a padronização de nomenclaturas das divisões.
+2- Tomar cuidado para não utilizar o mesmo nome que outro membro já tenha usado ( Ctrl + f para conferir).
+3- Não alterar o css geral e nem o que foi feito na área de outro membro, utlize somente a sua área (estão disponíveis após o estilo geral.
+4- Qualquer dúvida consultar o responsável pela padronização do CSS.
+*/
+
+
 /*ESTILO GERAL*/
 
 *{
@@ -8,9 +16,9 @@
     box-sizing:border-box;
 }
 
-body{
+#bodyhomepage{
     background-color: #012340;
-    height: 100vh;
+    
 }
 
 .interface{
@@ -25,6 +33,8 @@ body{
 .flex{
     display: flex;
 }
+
+/* --- ESTILO HOMEPAGE (INDEX.HTML) --- */
 
 /*ESTILO HEADER*/
 
@@ -519,3 +529,23 @@ section.vantagens .txt-vantagens .titulo{
         font-size: 24px;
     }
 }
+
+/* ------  ÁREAS INDIVIDUAIS PARA ESTILIZAÇÃO  ------ */
+
+
+/* -- BRUNA FURTADO -- */
+
+/* -- BRUNO ALEJANDRO -- */
+
+/* -- FELLIPE BARROS -- */
+
+/* -- MARCELLA BELCHIOR -- */
+
+/* -- OTÁVIO AUGUSTO -- */
+
+
+
+
+
+
+
