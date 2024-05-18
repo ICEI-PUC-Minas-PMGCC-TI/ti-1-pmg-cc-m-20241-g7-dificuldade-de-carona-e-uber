@@ -530,6 +530,21 @@ section.vantagens .txt-vantagens .titulo{
     }
 }
 
+
+/* RODAPÉ */
+
+.rodape {
+    background-color: #012340;
+    color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 1.6rem;
+    text-align: center;
+  }
+
+
 /* ------  ÁREAS INDIVIDUAIS PARA ESTILIZAÇÃO  ------ */
 
 
