@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas corridas</title>
+    <!-- Conexão com página de css -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <!-- Conexão com página de javascript/json -->
+    <script type="text/javascript" src="../assets/scripts/marcella_edicaoeexclusao_posts.js"></script>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            background-color: #012340;
+        }
+        #espacointernopost{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 100px;
+        }
+
+        #meusposts{
+            margin-top: 10%;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+
+        }
+        
+
+        .postexemplo{
+            background-color: #F2F2F2;
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 15px;
+            margin: auto;
+            width: 500px;
+        }
+
+        .img_perfil{
+            width: 50px;
+            height: 50px;
+
+        }
+
+        #foto_nome, #foto_nome_tipo, #tipo_motorista_passageiro{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        #foto_nome_tipo{
+            gap: 100px;
+            margin-bottom: 20px;
+            
+        }
+        #foto_nome{
+            gap: 20px;
+
+        }
+
+        #tipo_motorista_passageiro{
+            gap: 15px;
+
+        }
+
+       
+        
+    </style>
+
+</head>
+
+<body onload="exibirPosts()">
+        <!-- CABEÇALHO -->
+        <header style="background-color: #001B2E;">
+            <div class="interface">
+                <!--Logo-->
+                <div class="logo">
+                    <a href="#homepage">
+                        <div class="caroneiros">
+                            <img src="../assets/images/logo.png" alt="Logo">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- VOLTAR -->
+
+
+        <!-- POSTAGENS USER-->
+        <section id="meusposts">
+           <!-- <div class="postexemplo">
+                <div id="espacointernopost">
+                    <div id="foto_nome_tipo">
+                        <div id="foto_nome">
+                            <img class="img_perfil" id="foto_user" src="https://i.postimg.cc/Wprzz5n6/img-perfil-post.png" alt="Imagem de perfil do usuário">
+                            <p id="nome_user">NOME USUÁRIO</p>
+                        </div>
+
+                        <div id="tipo_motorista_passageiro">
+                            <p>Tipo:</p>
+                            <p id="tipousuario">Passageiro(a)/Motorista</p>
+                        </div>  
+                    </div>
+
+                    <div id="descricao_post">
+                        <ul>
+                            <li>Descrição</li>
+                        </ul>
+                    </div>
+
+                    <div id="botoes_editar_excluir">
+                        <button>editar</button>
+                        <button>excluir</button>
+
+                    </div>
+                </div>
+            </div> -->
+
+        </section>
+
+
+
+
+        <!-- RODAPÉ -->
+    <footer class="rodape">
+        <p>
+            © 2024 Caroneiros- Todos os direitos reservados.
+        </p>
+      </footer>
+</body>
+
+</html>
