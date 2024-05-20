@@ -1,0 +1,114 @@
+[
+    {
+        "name": "Ciclana",
+        "type": "Passageiro(a)",
+        "description": "Preciso de Carona e estou disposto a rachar a corrida",
+        "zone": "Oeste",
+        "address": "Rua Lauro Ferrera 132 - Buritis",
+        "pic": "profile2.jpg"
+    },
+    {
+        "name": "Beutrano",
+        "type": "Passageiro(a)",
+        "description": "Estou disposto a oferecer carona, fazer novas amizades",
+        "zone": "Oeste e Noroeste",
+        "address": "Rua José Freitas 12 - Jardim",
+        "pic": "profile1.jpg"
+    },
+    {
+        "name": "Teutrano",
+        "type": "Passageiro(a)",
+        "description": "Preciso de Carona e estou disposto a rachar a corrida",
+        "zone": "Norte",
+        "address": "---",
+        "pic": "profile2.jpg"
+    },
+    {
+        "name": "Hermano",
+        "type": "Motorista",
+        "description": "Estou disposto a oferecer carona, fazer novas amizades",
+        "zone": "Sul e Sudeste",
+        "address": "---",
+        "pic": "profile2.jpg"
+    },
+    {
+        "name": "O Tata é Fota",
+        "type": "Motorista",
+        "description": "Preciso de Carona e estou disposto a rachar a corrida",
+        "zone": "Sul",
+        "address": "---", 
+        "pic": "profile2.jpg"
+    },
+    {
+        "name": "Neutrano",
+        "type": "Passageiro(a)",
+        "description": "Estou disposto a oferecer carona, fazer novas amizades",
+        "zone": "Noroeste",
+        "address": "---", 
+        "pic": "profile2.jpg"
+    },
+    {
+        "name": "Teutrano",
+        "type": "Passageiro(a)",
+        "description": "Preciso de Carona e estou disposto a rachar a corrida",
+        "zone": "Norte",
+        "address": "---",
+        "pic": "profile2.jpg"
+    },
+    {
+        "name": "Hermano",
+        "type": "Motorista",
+        "description": "Estou disposto a oferecer carona, fazer novas amizades",
+        "zone": "Sul e Sudeste",
+        "address": "---",
+        "pic": "profile2.jpg"
+    },
+    {
+        "name": "O Tata é Fota",
+        "type": "Motorista",
+        "description": "Preciso de Carona e estou disposto a rachar a corrida",
+        "zone": "Sul",
+        "address": "---", 
+        "pic": "profile2.jpg"
+    },
+    {
+        "name": "Neutrano",
+        "type": "Passageiro(a)",
+        "description": "Estou disposto a oferecer carona, fazer novas amizades",
+        "zone": "Noroeste",
+        "address": "---", 
+        "pic": "profile2.jpg"
+    },
+    {
+        "name": "Teutrano",
+        "type": "Passageiro(a)",
+        "description": "Preciso de Carona e estou disposto a rachar a corrida",
+        "zone": "Norte",
+        "address": "---",
+        "pic": "profile2.jpg"
+    },
+    {
+        "name": "Hermano",
+        "type": "Motorista",
+        "description": "Estou disposto a oferecer carona, fazer novas amizades",
+        "zone": "Sul e Sudeste",
+        "address": "---",
+        "pic": "profile2.jpg"
+    },
+    {
+        "name": "O Tata é Fota",
+        "type": "Motorista",
+        "description": "Preciso de Carona e estou disposto a rachar a corrida",
+        "zone": "Sul",
+        "address": "---", 
+        "pic": "profile2.jpg"
+    },
+    {
+        "name": "Neutrano",
+        "type": "Passageiro(a)",
+        "description": "Estou disposto a oferecer carona, fazer novas amizades",
+        "zone": "Noroeste",
+        "address": "---", 
+        "pic": "profile2.jpg"
+    }
+]
