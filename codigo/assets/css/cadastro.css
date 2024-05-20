@@ -1,0 +1,99 @@
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('../images/cadastro/fundo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#img {
+    margin-left: 5%;
+    margin-right: 20%;
+    margin-top: -30%;
+}
+
+#box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    border-color: #000000;
+    width: 450px;
+}
+
+#box h2 {
+    margin-bottom: 20px;
+    font-size: 35px;
+    color: #333333;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+#lados {
+    display: flex;
+    justify-content: space-around;
+}
+
+#form-group {
+    margin-bottom: 15px;
+}
+
+#form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333333;
+}
+
+#form-group input,
+#form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+#form-senha {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
+    margin-bottom: 2%;
+}
+#form-senha input{
+    width: 60%;
+    padding: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+#form-group button {
+    width: 30%;
+    margin-left: 35%;
+    padding: 10px;
+    background-color: #20638C;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#form-group button:hover {
+    background-color: #1f6d8c;
+}
+
+#irLogar {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: #3EC8F3;
+}
