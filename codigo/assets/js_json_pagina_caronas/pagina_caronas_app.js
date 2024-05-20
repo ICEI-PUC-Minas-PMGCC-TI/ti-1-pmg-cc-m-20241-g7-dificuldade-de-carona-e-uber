@@ -1,11 +1,11 @@
-fetch('pagina_caronas.json')
+fetch('assets/js_json_pagina_caronas/pagina_caronas.json')
 .then(response => response.json())
 .then(data => {
     const container = document.getElementById('cards_container');
     data.forEach(person => {
         const cardHTML = `
             <div class="card">
-                <img class ="card_img" src="assets/images/${person.pic}" width="50" height="50">
+                <img class ="card_img" src="assets/imagens_pagina_caronas/${person.pic}" width="50" height="50">
                 <div class="details">
                     <h2>${person.name} - ${person.type}</h4>
                     <p>${person.description}</p>

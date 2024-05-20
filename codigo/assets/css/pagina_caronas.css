@@ -163,6 +163,7 @@ body {
 
 .card button {
     margin-right: 2em;
+    margin-left: 2em;
     padding: 10px 20px;
     background-color: #001b2e;
     color: white;
