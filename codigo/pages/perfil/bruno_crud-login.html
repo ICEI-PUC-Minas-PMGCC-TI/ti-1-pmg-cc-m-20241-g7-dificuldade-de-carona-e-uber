@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Conexão com página de css -->
+    <link rel="stylesheet" href="/codigo/assets/css/login.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="img"></div>
+    <div id="login">
+        <div id="img_logo">
+            <a href="/codigo/index.html">
+                <img src="/codigo/assets/images/cadastro/logo.png" width="130px" alt="Logo">
+            </a>
+        </div>
+        <div id="box">
+            <h2>Login Usuario</h2>
+            <div id="forms">
+                <form id="login-form" onsubmit="processaFormLogin(event)">
+                    <div id="form-group">
+                        <h3>CPF</h3>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div id="form-group">
+                        <h3>Senha</h3>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit">Logar</button>
+                </form>
+                <h4>Esqueci minha senha</h4>
+                <div id="n_senha">
+                    <h4>Nao tem login?</h4>
+                    <a href="/codigo/pages/perfil/bruno_crud-cadastro.html">
+                        <h4>Cadastrar</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="rodape">
+        <p>
+            © 2024 Caroneiros- Todos os direitos reservados.
+        </p>
+      </footer>
+
+    <script src="/codigo/assets/json/js_login/login.js"></script>
+    <script>
+        // Declara uma função para processar o formulário de login
+        function processaFormLogin(event) {
+            // Cancela a submissão do formulário para tratar sem fazer refresh da tela
+            event.preventDefault();
+
+            // Obtem os dados de login e senha a partir do formulário de login
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            // Valida login e se estiver ok, redireciona para tela inicial da aplicação
+            var resultadoLogin = loginUser(username, password);
+            if (resultadoLogin) {
+                window.location.href = '/codigo/index.html';
+            } else {
+                // Se login falhou, avisa ao usuário
+                alert('Usuário ou senha incorretos');
+            }
+        }
+
+        // Inicializa as estruturas utilizadas pelo LoginApp
+        initLoginApp();
+    </script>
+</body>
+
+</html>

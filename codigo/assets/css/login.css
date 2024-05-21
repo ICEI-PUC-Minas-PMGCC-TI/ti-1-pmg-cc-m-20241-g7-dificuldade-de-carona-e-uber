@@ -1,48 +1,43 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
-    box-sizing:border-box;
-}
-
-#bodyhomepage{
-    background-color: #012340;
-    
-}
-
-.interface{
-    max-width: 1350px;
-    padding-right: 10px;
-    padding-left: 10px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.flex{
-    display: flex;
+    box-sizing: border-box;
 }
 
 body {
+    display: flex;
+    font-family: "Inter", sans-serif;
+}
+
+#img {
+    width: 50%;
     font-family: "Inter", sans-serif;
     background-color: #f0f0f0;
     display: flex;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-image: url('../images/cadastro/fundo.jpg');
+    background-image: url('../images/login/fundo.jpg');
     background-size: cover;
     background-position: center;
 }
 
-#img {
-    margin-left: 5%;
-    margin-right: 20%;
-    margin-top: -30%;
+#login {
+    width: 50%;
+    background-color: #012340;
+}
+
+#img_logo {
+    margin-left: 40%;
+    margin-top: 10%;
 }
 
 #box {
+    text-align: center;
+    margin-left: 25%;
+    margin-top: 10%;
     background-color: #ffffff;
     padding: 20px;
     border-radius: 20px;
@@ -51,46 +46,23 @@ body {
     width: 450px;
 }
 
-#box h2 {
-    margin-bottom: 20px;
-    font-size: 35px;
-    color: #333333;
-    text-align: center;
+h2 {
     font-family: "Montserrat", sans-serif;
+    font-size: 40px;
 }
 
-#lados {
-    display: flex;
-    justify-content: space-around;
+#forms {
+    margin-top: 10%;
 }
 
-#form-group {
-    margin-bottom: 15px;
-}
-
-#form-group label {
-    display: block;
-    margin-bottom: 5px;
-    color: #333333;
-}
-
-#form-group input,
-#form-group select {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #cccccc;
-    border-radius: 20px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    box-sizing: border-box;
-}
-
-#form-senha {
-    display: flex;
-    flex-direction: column;
-    margin-left: 30%;
+h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    margin-top: 5%;
     margin-bottom: 2%;
 }
-#form-senha input{
+
+input {
     width: 60%;
     padding: 8px;
     border: 1px solid #cccccc;
@@ -98,10 +70,9 @@ body {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     box-sizing: border-box;
 }
-
-#form-group button {
+button {
     width: 30%;
-    margin-left: 35%;
+    margin-top: 10%;
     padding: 10px;
     background-color: #20638C;
     border: none;
@@ -111,18 +82,24 @@ body {
     cursor: pointer;
 }
 
-#form-group button:hover {
+button:hover {
     background-color: #1f6d8c;
-}
-
-#irLogar {
-    display: flex;
-    justify-content: center;
 }
 
 a {
     color: #3EC8F3;
     text-decoration: none;
+}
+
+h4{
+    font-size: 12px;
+    margin-top: 4%;
+}
+
+#n_senha{
+    margin-left: 32%;
+    display: flex;
+    align-items: flex-end
 }
 
 footer.rodape {
