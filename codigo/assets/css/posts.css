@@ -1,0 +1,142 @@
+/* DEFAULT */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+}
+
+/* CABEÇALHO */
+
+header {
+  background-color: #001b2e;
+  box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);
+  width: 100vw;
+  min-height: 18vh;
+}
+
+
+.cabecalho {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  text-align: center;
+}
+
+
+.logo {
+  margin-right: 20rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover{
+  transform: scale(1.1);
+
+}
+
+.logo > a > img {
+  width: 250px;
+}
+
+.menu {
+  padding-right: 10rem;
+}
+
+.menu> a > img{
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu > a > img:hover {
+  transform: scale(1.2);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* CORPO */
+
+.popup_selecao_post {
+  border: black 1px solid;
+  border-radius: 1rem;
+  width: 330px;
+  height: 450px;
+  margin-top: 2rem;
+  padding: 1rem;
+  text-align: center;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popup_selecao_post > h1{
+  font-weight: 500;
+}
+
+.popup_selecao_post > a{
+  color: #fff;
+  font-size: larger;
+  font-weight: 500;
+  background-color: #20638C;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+  padding: 0.8rem 3rem;
+  margin-top: 1.2rem;
+  border-radius: 0.5rem;
+  transition: transform .5s ease-in-out;
+}
+
+.popup_selecao_post > a:hover{
+  transform: scale(1.1);
+}
+
+.voltarButton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+
+.voltarButton >  a{
+  color: #3EC8F3;
+  transition: color .5s ease-in-out;
+}
+
+.voltarButton > a:hover {
+  color: #20638C; 
+}
+
+/* RODAPÉ */
+
+.rodape {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  min-height: 10vh;
+  width: 100vw;
+  background-color: #001b2e;
+  color: #fff;
+}
+
+/* RESPONSIVIDADE
+
+
+
+PENDENTE
+
+
+
+*/
+
+
+
