@@ -1,0 +1,146 @@
+<!-- MARCELLA-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas caronas</title>
+    <!-- Conexão com página de css -->
+    <link rel="stylesheet" href="/codigo/assets/css/styles.css">
+    <link rel="stylesheet" href="/codigo/assets/css/minhas_caronas.css">
+
+    <!-- Conexão com página de javascript/json -->
+    <script type="text/javascript" src="/codigo/assets/scripts/minhas_caronas.js"></script>
+    <script type="text/javascript" src="/codigo/assets/scripts/minhas_caronas.json"></script>
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+   
+
+</head>
+
+<body>
+        <!-- CABEÇALHO -->
+        <header style="background-color: #001B2E;">
+            <div class="interface" style="display: flex; justify-content: center;">
+                <!--Logo-->
+                <div class="logo">
+                    <a href="#homepage">
+                        <div class="caroneiros">
+                            <img src="https://i.postimg.cc/mgDZ6PTk/logo-header-minhascaronas-page.png" alt="Logo">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- VOLTAR -->
+
+
+        <!-- POSTAGENS USER-->
+        <section id="meusposts"></section>
+
+        <div id="overlay" class="overlay" style="display: none;"></div>
+        <div id="editFormContainer" style="display: none;">
+            <form id="editForm" onsubmit="salvarEdicao(event)">
+                <input type="hidden" id="editUserId">
+                <label for="editUserName">Nome:</label>
+                <input type="text" id="editUserName" required>
+
+                <label for="editUserType">Tipo:</label>
+                <select id="editUserType">
+                    <option value="Motorista">Motorista</option>
+                    <option value="Passageiro(a)">Passageiro(a)</option>
+                </select>
+
+                <label for="editUserDescription">Descrição:</label>
+                <textarea id="editUserDescription" required></textarea>
+
+                <label for="editUserZone">Zona:</label>
+                <select id="editUserZone">
+                    <option value="Oeste">Oeste</option>
+                    <option value="Leste">Leste</option>
+                    <option value="Norte">Norte</option>
+                    <option value="Leste">Central</option>
+                    <option value="Leste">Sul</option>
+                </select>
+
+                <label for="editUserAddress">Endereço:</label>
+                <input type="text" id="editUserAddress" required>
+
+                <label for="editUserValue">Valor:</label>
+                <select id="editUserValue">
+                    <option value="05.00">R$ 5,00</option>
+                    <option value="10.00">R$ 10,00</option>
+                    <option value="15.00">R$ 15,00</option>
+                    <option value="20.00">R$ 20,00</option>
+                    <option value="25.00">R$ 25,00</option>
+                    <option value="30.00">R$ 30,00</option>
+                    <option value="35.00">R$ 35,00</option>
+                    <option value="40.00">R$ 40,00</option>
+                    <option value="45.00">R$ 45,00</option>
+                    <option value="50.00">R$ 50,00</option>
+                </select>
+
+                <label for="editUserTime">Horário chegada:</label>
+                <select id="editUserTime">
+                    <option value="06:30">06:30</option>
+                    <option value="07:00">07:00</option>
+                    <option value="07:30">07:30</option>
+                    <option value="08:00">08:00</option>
+                    <option value="08:30">08:30</option>
+                    <option value="09:00">09:00</option>
+                    <option value="09:30">09:30</option>
+                    <option value="10:00">10:00</option>
+                    <option value="10:30">10:30</option>
+                    <option value="11:00">11:00</option>
+                    <option value="11:30">11:30</option>
+                    <option value="12:00">12:00</option>
+                    <option value="12:30">12:30</option>
+                    <option value="13:00">13:00</option>
+                    <option value="13:30">13:30</option>
+                    <option value="14:00">14:00</option>
+                    <option value="14:30">14:30</option>
+                    <option value="15:00">15:00</option>
+                    <option value="15:30">15:30</option>
+                    <option value="16:00">16:00</option>
+                    <option value="16:30">16:30</option>
+                    <option value="17:00">17:00</option>
+                    <option value="17:30">17:30</option>
+                    <option value="18:00">18:00</option>
+                    <option value="18:30">18:30</option>
+                    <option value="19:00">19:00</option>
+                    <option value="19:30">19:30</option>
+                    <option value="20:00">20:00</option>
+                    <option value="20:30">20:30</option>
+                    <option value="21:00">21:00</option>
+                    <option value="21:30">21:30</option>
+                    <option value="22:00">22:00</option>
+                </select>
+
+                <button type="submit">Salvar</button>
+                <button type="button" onclick="cancelarEdicao()">Cancelar</button>
+            </form>
+        </div>
+
+
+
+
+
+        <!-- RODAPÉ -->
+    <footer class="rodape" style="background-color: #001B2E;">
+        <p id="footer_page">
+            © 2024 Caroneiros - Todos os direitos reservados.
+        </p>
+      </footer>
+</body>
+
+</html>
+
+
+
+    
+  

@@ -1,0 +1,148 @@
+/*<!-- MARCELLA-->*/
+
+/* GERAL */
+
+body{
+    background-color: #012340;
+}
+
+/* POSTS */
+
+#espacointernopost{
+    display: flex;
+    justify-content: c;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+    
+}
+
+#meusposts{
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 550px 550px 550px;
+    gap: 50px;
+    padding: 20px;
+    justify-content: center;
+    margin-bottom: 10%;
+   
+
+}
+
+
+.postexemplo{
+    background-color: #F2F2F2;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
+    margin: auto;
+    width: 500px;
+    height: 350px;
+}
+
+.img_perfil{
+    width: 50px;
+    height: 50px;
+
+}
+
+#foto_nome, #foto_nome_tipo, #tipo_motorista_passageiro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+#foto_nome_tipo{
+    display: flex;
+    margin-bottom: 20px;
+    gap: 100px;
+    width: 100%;
+
+    
+}
+#foto_nome{
+    
+    gap: 15px;
+    width: 100%;
+
+}
+
+#tipo_motorista_passageiro{
+    gap: 15px;
+
+}
+
+#descricao_post ul{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+#descricao_post{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 95%;
+    height: 200px;
+    
+}
+
+#editar , #excluir{
+    border-style: none;
+    cursor: pointer;
+}
+
+#editarimg , #excluirimg{
+    width: 40px;
+    height: 40px;
+}
+
+#botoes_editar_excluir{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+#editFormContainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+#editForm input, #editForm textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+
+#footer_page{
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
