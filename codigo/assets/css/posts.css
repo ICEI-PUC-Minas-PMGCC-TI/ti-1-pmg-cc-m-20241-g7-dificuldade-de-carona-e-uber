@@ -57,7 +57,7 @@ a {
   text-decoration: none;
 }
 
-/* CORPO */
+/* CORPO postEscolha.html */
 
 .popup_selecao_post {
   border: black 1px solid;
@@ -113,6 +113,122 @@ a {
   color: #20638C; 
 }
 
+/* CORPO postMotorista.html */
+
+.popup_criacao_postMotorista {
+  border: black 1px solid;
+  border-radius: 1rem;
+  width: 800px;
+  height: 500px;
+  margin-top: 2rem;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tituloForm{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tituloForm > h1{
+  font-weight: 400;
+}
+
+.closePopupButton{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding:2rem ;
+}
+
+.inputsForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px; 
+  align-items: center;
+}
+
+.inputsForm > div{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 15px;
+}
+
+.input-estilizado {
+  background-color: #eeeeee; 
+  border: none;
+  border-radius: 20px; 
+  box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.1); 
+  padding: 10px 15px; 
+  font-size: 16px; 
+  outline: none; 
+  width: 18em;
+  max-width: 18em;
+  max-height: 5em;
+}
+
+.btnPublicar{
+  cursor: pointer;
+  color: #fff;
+  font-size: larger;
+  font-weight: 500;
+  background-color: #20638C;
+  padding: 0.8rem 3rem;
+  margin-top: 1.2rem;
+  border-radius: 0.9rem;
+  transition: transform .5s ease-in-out;
+  border: none;
+}
+
+/* CORPO postPassageiro.html */
+
+.popup_criacao_postPassageiro {
+  border: black 1px solid;
+  border-radius: 1rem;
+  width: 800px;
+  height: 500px;
+  margin-top: 2rem;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.inputsForm2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; 
+  align-items: center;
+}
+
+.inputsForm2 > div{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 15px;
+}
+
+
+/*  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4); */
+
 /* RODAPÉ */
 
 .rodape {
@@ -137,6 +253,5 @@ PENDENTE
 
 
 */
-
 
 
