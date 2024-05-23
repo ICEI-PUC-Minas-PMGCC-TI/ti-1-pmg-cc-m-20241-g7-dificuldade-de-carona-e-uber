@@ -38,6 +38,9 @@
         </header>
 
         <!-- VOLTAR -->
+        <section id="voltar">
+            <a href="#caronas.html"><img id="voltar_img" src="https://i.postimg.cc/PqMC7yQR/arrow.png" alt="seta para voltar" ></a>
+        </section>
 
 
         <!-- POSTAGENS USER-->
@@ -47,18 +50,18 @@
         <div id="editFormContainer" style="display: none;">
             <form id="editForm" onsubmit="salvarEdicao(event)">
                 <input type="hidden" id="editPostId">
-                <label for="editPostName">Nome:</label>
-                <input type="text" id="editPostName" required>
         
                 <label for="editPostType">Tipo:</label>
                 <select id="editPostType">
                     <option value="Motorista">Motorista</option>
                     <option value="Passageiro(a)">Passageiro(a)</option>
                 </select>
-        
+        <br>
+        <br>
                 <label for="editPostDescription">Descrição:</label>
                 <textarea id="editPostDescription" required></textarea>
-        
+              
+                <br>
                 <label for="editPostZone">Zona:</label>
                 <select id="editPostZone">
                     <option value="Oeste">Oeste</option>
@@ -67,10 +70,12 @@
                     <option value="Central">Central</option>
                     <option value="Sul">Sul</option>
                 </select>
-        
+                <br>
+                <br>
                 <label for="editPostAddress">Endereço:</label>
                 <input type="text" id="editPostAddress" required>
-        
+                
+                <br>
                 <label for="editPostValue">Valor:</label>
                 <select id="editPostValue">
                     <option value="5.00">R$ 5,00</option>
@@ -83,9 +88,10 @@
                     <option value="40.00">R$ 40,00</option>
                     <option value="45.00">R$ 45,00</option>
                     <option value="50.00">R$ 50,00</option>
-                    <option value=""></option>
+                  
                 </select>
-        
+                <br>
+                <br>
                 <label for="editPostTime">Horário chegada:</label>
                 <select id="editPostTime">
                     <option value="06:30">06:30</option>
@@ -121,9 +127,10 @@
                     <option value="21:30">21:30</option>
                     <option value="22:00">22:00</option>
                 </select>
-        
-                <button type="submit">Salvar</button>
-                <button type="button" onclick="cancelarEdicao()">Cancelar</button>
+                <br>
+                <br>
+                <button id="formbtsave" type="submit">Salvar</button>
+                <button id="formbtcancel" type="button" onclick="cancelarEdicao()">Cancelar</button>
             </form>
         </div>
         
@@ -136,6 +143,7 @@
         <!-- RODAPÉ -->
     <footer class="rodape" style="background-color: #001B2E;">
         <p id="footer_page">
+            
             © 2024 Caroneiros - Todos os direitos reservados.
         </p>
       </footer>

@@ -6,6 +6,21 @@ body{
     background-color: #012340;
 }
 
+/* VOLTAR*/
+
+#voltar{
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    margin-top: 15%;
+}
+
+#voltar_img{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
 /* POSTS */
 
 #espacointernopost{
@@ -18,7 +33,7 @@ body{
 }
 
 #meusposts{
-    margin-top: 10%;
+    margin-top: 5%;
     display: grid;
     grid-template-columns: 550px 550px 550px;
     gap: 50px;
@@ -116,11 +131,51 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1000;
-    background-color: white;
+    background-color: rgb(246, 247, 255);
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 30%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: solid;
+border-color: #013868;
+border-width: 5px;
 }
+
+#editFormContainer label{
+    font-size: larger;
+}
+
+#editFormContainer option{
+    font-size: larger;
+
+}
+
+#formbtsave, #formbtcancel{
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    border-style: solid;
+    border-radius: 15px;
+    margin: 5px;
+    font-size: medium;
+}
+
+#formbtsave{
+    background-color: #012340;
+    color: #F2F2F2;
+ 
+}
+
+#formbtcancel{
+    background-color: #F2F2F2;
+    color: #012340;
+}
+
+
 
 .overlay {
     position: fixed;
