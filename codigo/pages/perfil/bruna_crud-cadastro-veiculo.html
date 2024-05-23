@@ -3,17 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título da página</title>
+    <title>Perfil</title>
     <!-- Conexão com página de css -->
-    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="/codigo/assets/css/perfil.css">
+    <!-- Conexão com a página do js -->
+    <script src="/codigo/assets/json/Cadastro do Veiculo/veiculo.js"></script>
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
-<body>
+<body id="bodyhomepage">
 
+    <header>  
+        <!--CABEÇALHO-->
+        <div class="interface">
+            <div class="logo">
+                <a href="/codigo/pages/posts/caronas.html">
+                    <img src="/codigo/assets/images/perfil/logo.png">
+                </a>
+            </div>
+            <div class="menu">
+                <a class="ir-para-homepage" href="/codigo/inicio.html">
+                    <img src="/codigo/assets/images/perfil/homepage.png">
+                </a>
+                <a class="ir-para-historico" href="#">
+                    <img src="/codigo/assets/images/perfil/historico.png">
+                </a>
+                <a class="ir-para-caronas" href="/codigo/pages/posts/caronas.html">
+                    <img src="/codigo/assets/images/perfil/car.png">
+                </a>
+            </div>
+        </div>
+</header>
+
+<main>
+    <!--CADASTROS-->
+    <section class="cadastros">
+        <!--IMG PROFILE-->
+        <div class="flex">
+            <div class="img-profile">
+                <img src="/codigo/assets/images/perfil/profile.png" alt="Imagem Profile">
+            </div>
+            <!--CADASTRO DO CARRO-->
+            <div class="box">
+                <h2>CARRO</h2>
+                <form id="cadastroCarroForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="placa">Placa:</label>
+                            <input type="text" id="placa" name="placa" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="marca">Marca:</label>
+                            <input type="text" id="marca" name="marca" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="modelo">Modelo:</label>
+                            <input type="text" id="modelo" name="modelo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="ano">Ano:</label>
+                            <input type="number" id="ano" name="ano" required>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-button">
+                        <button type="submit" id="btnCadastrarCarro">Cadastrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="rodape">
+    <p>
+        © 2024 Caroneiros- Todos os direitos reservados.
+    </p>
+  </footer>
 </body>
 
 </html>
