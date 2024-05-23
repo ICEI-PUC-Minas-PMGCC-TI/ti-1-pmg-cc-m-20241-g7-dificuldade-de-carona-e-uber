@@ -176,6 +176,7 @@ a {
   width: 18em;
   max-width: 18em;
   max-height: 5em;
+  resize: none;
 }
 
 .btnPublicar{
