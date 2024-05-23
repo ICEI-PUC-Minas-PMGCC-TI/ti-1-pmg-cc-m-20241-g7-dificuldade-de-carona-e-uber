@@ -108,24 +108,24 @@ header a:hover{
     transform: scale(1.05);
 }
 
-header nav ul{
+header nav.menu-desktop ul{
     list-style-type: none;
 }
 
-header nav ul li{
+header nav .menu-desktop :is(ul li){
     display: inline-block;
     padding: 0 40px;
 }
 
 @media (max-width: 1130px) {
-    header nav ul li{
+    header nav .menu-desktop :is(ul li){
     display: inline-block;
     padding: 0 20px;
     }
 }
 
 @media (max-width: 1000px) {
-    header nav ul li{
+    header nav .menu-desktop :is(ul li){
     display: inline-block;
     padding: 0 10px;
     }
@@ -175,35 +175,6 @@ header .logo .caroneiros img{
     }
 }
 
-@media (max-width: 900px) {
-    .menu-desktop {
-        display: none;
-    }
-}
-
-.menu-mobile{
-    display: none;
-}
-
-@media (max-width: 900px) {
-    .menu-mobile {
-        display: flex;
-    }
-
-    .sub-menu{
-        padding: 0;
-        flex-direction: column;
-        white-space: nowrap;
-        transition-timing-function: ease-in-out;
-        visibility: hidden;
-        opacity: 0;
-        display: flex;
-        position: absolute;
-        top: 100%;
-    }
-    
-}
-
 @media (max-width: 560px) {
     header .cadastro-login button{
         font-size: 13.5px;
@@ -213,6 +184,126 @@ header .logo .caroneiros img{
         width: 167px;  
     }
 }
+
+@media(max-width: 900px) {
+    header nav{
+        display: none;
+    }
+}
+
+
+
+
+/* Estilos para o botão hamburger */
+header .hamburger {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid #fff;
+    cursor: pointer;
+}
+
+header .hamburger::before,
+header .hamburger::after {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin-top: 5px;
+}
+
+/* Estilos para o menu mobile */
+header .menu-mobile .sub-menu {
+    display: none;
+}
+
+/* Estilos responsivos */
+@media (max-width: 900px) {
+    header .hamburger {
+        display: block;
+        z-index: 1;
+        transition: .4s;
+    }
+
+    header .hamburger:hover{
+        transform: scale(1.05);
+    }
+
+    header .menu-mobile .sub-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #012340;
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+
+        pointer-events: none;
+    }
+
+    header .menu-mobile .sub-menu a {
+        font-size: 24px;
+        opacity: 0;
+    }
+    
+    header .menu-mobile .sub-menu li:nth-child(1) a {
+        transition: 0.5s 0.2s;
+    }
+    
+    header .menu-mobile .sub-menu li:nth-child(2) a {
+        transition: 0.5s 0.4s;
+    }
+    
+    header .menu-mobile .sub-menu li:nth-child(3) a {
+        transition: 0.5s 0.6s;
+    }
+
+    header .menu-mobile .sub-menu li{
+        list-style-type: none;
+        font-size: 30px;
+        font-weight: bold;
+        text-shadow: 10px 3px 20px #000000;
+    }
+
+    /* Estilos ativos */
+    .menu-mobile.active .sub-menu {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    }
+    
+    .menu-mobile.active .sub-menu a {
+        opacity: 1;
+    }
+    
+    .menu-mobile.active .hamburger {
+        position: fixed;
+        top: 26px;
+        right: 16px;
+        border-top-color: transparent;
+    }
+
+    .menu-mobile.active .hamburger::before {
+        transition: 0.5s 0.05s;
+        transform: rotate(135deg);
+    }
+    
+    .menu-mobile.active .hamburger::after {
+        transition: 0.5s 0.05s;
+        transform: rotate(-135deg);
+        margin-top: -2px;
+        top: -7px;
+    }
+}
+
+
 
 /*MAIN - TOPO DO SITE*/
 
@@ -366,7 +457,8 @@ section.contribua .flex{
 /*descritiva*/
 
 section.contribua .img-descritiva img{
-    box-shadow: 0px 0px 12px rgb(0 0 0 / 40%);
+    border-radius: 30px;
+    box-shadow: 10px 10px 15px rgb(0 0 0 / 40%);
     width: 500px;
 }
 
@@ -508,20 +600,17 @@ transform: scale(1.05);
 
 /*VANTAGENS*/
 
-section.vantagens .txt-vantagens{
+section.vantagens .titulo{
     padding: 60px 6%;
     text-align: center;
     color: #fff;
     text-shadow: 1px 2px 6px #000000;
     justify-content: center;
-}
-
-section.vantagens .txt-vantagens .titulo{
     font-size: 40px;
 }
 
 @media (max-width: 540px) {
-    section.vantagens .txt-vantagens{
+    section .vantagens{
         padding: 25px 6%;
         text-align: center;
         color: #fff;
@@ -529,18 +618,30 @@ section.vantagens .txt-vantagens .titulo{
         justify-content: center;
     }
     
-    section.vantagens .txt-vantagens .titulo{
+    section.vantagens .titulo{
         font-size: 24px;
     }
 }
 
+section.vantagens .flex{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    padding-bottom: 60px;
+}
+section.vantagens :is(h3, p){
+    color: #fff; 
+    text-align: center;
 
-/* RODAPÉ 
-opacity: 0.5;
-background-color: #012340;
-    */
+}
 
-.rodape {
+
+
+/* RODAPÉ */
+
+footer.rodape {
     background-color: rgba(1, 35, 64, 0.7);
     color: #fff;
     position: fixed;
@@ -550,7 +651,7 @@ background-color: #012340;
     width: 100%;
     text-align: center;
     font-size: 11px;
-  }
+}
 
 
 /* ------  ÁREAS INDIVIDUAIS PARA ESTILIZAÇÃO  ------ */
