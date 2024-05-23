@@ -9,7 +9,7 @@
 }
 
 #bodyhomepage{
-    background-color: #fff;
+    background-color: #00000027;
     
 }
 
@@ -98,12 +98,10 @@ header a:hover{
 }
 
 header .menu{
-    font-size: 15px;
     justify-content: flex-end;
     padding:10px 20px;
     outline: none;
     cursor: pointer;
-    
 }
 
 header .menu a {
@@ -127,20 +125,8 @@ header .logo img{
     padding-top: 12px;
 }
 
-@media (max-width: 900px) {
-    header .logo img{
-        padding-left: 20px;
-    }
-}
-
 @media (max-width: 560px) {
-    header .cadastro-login button{
-        font-size: 13.5px;
-        padding:7.5px 8px;
-    }
-    header .logo .caroneiros img{
-        width: 167px;  
-    }
+
 }
 
 
@@ -150,6 +136,8 @@ header .logo img{
 
 section.cadastros{
     margin-top: 150px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 section .flex{
     padding-left: 10px;
@@ -167,14 +155,9 @@ section .img-profile img{
     width: 350px;
 }
 
-@media (max-width: 550px) {
-    section .img-profile{
-        padding-left: 10px;
-        padding-right: 10px;
-    }
+@media (max-width: 1000px) {
     section .img-profile img{
-        max-width: 100%;
-        height: auto;
+        display: none;
     }
 }
 
@@ -252,6 +235,18 @@ section .form-group {
 
 section .form-group:last-child {
     margin-right: 0; /* Remove a margem do último item em cada linha */
+}
+
+@media (max-width: 1000px) {
+    section .box{
+        padding-left: 10px;
+        padding-right: 10px;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 
