@@ -1,21 +1,111 @@
-<!-- FELIPE -->
+<!-- FELIPE / FAZER RESPONSIVIDADE -->
 
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título da página</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caroneiros</title>
     <!-- Conexão com página de css -->
-    <link rel="stylesheet" href="/codigo/assets/css/styles.css">
+    <link rel="stylesheet" href="/codigo/assets/css/posts.css" />
     <!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
+    <!-- CABEÇALHO -->
+    <header>
+      <div class="cabecalho">
+        <div class="logo">
+          <a href="/codigo/index.html">
+            <img src="/codigo/assets/images/posts/logoPost.png" />
+          </a>
+        </div>
+        <div class="menu">
+          <a href="/codigo/inicio.html">
+            <img
+              src="/codigo/assets/images/imagens_pagina_caronas/logo_casa.png"
+            />
+          </a>
+          <a href="#">
+            <!-- COLOCAR O LINK PARA PÁGINA DE PERFIL -->
+            <img
+              src="/codigo/assets/images/imagens_pagina_caronas/logo_perfil.png"
+            />
+          </a>
+          <a href="#">
+            <!-- COLOCAR O LINK PARA PÁGINA DE HISTÓRICO -->
+            <img
+              src="/codigo/assets/images/imagens_pagina_caronas/logo_historico.png"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
 
-</body>
+    <!-- CORPO DA PÁGINA -->
 
+    <form
+      id="meuFormulario"
+      action="./caronas.html"
+      method="get"
+      class="popup_criacao_postPassageiro"
+    >
+      <div class="tituloForm">
+        <h1>Novo Post - Passageiro</h1>
+        <a href="./postEscolha.html" class="closePopupButton">
+          <img
+            src="/codigo/assets/images/posts/closeX.png"
+            alt="Rastro Veículo Alta Velocidade"
+          />
+        </a>
+      </div>
+
+      <div class="inputsForm2">
+        <div class="item1">
+          <label for="registrarDescricaoCorridaMotorista">Descrição</label>
+          <textarea
+            id="registrarDescricaoCorridaMotorista"
+            placeholder="Descrição"
+            class="input-estilizado"
+            required
+          ></textarea>
+        </div>
+        <div class="item2">
+          <label for="registrarZonaCorridaMotorista">Zonas</label>
+          <select id="registrarZonaCorridaMotorista" class="input-estilizado" required>
+            <option value="" selected></option>
+            <option value="Oeste">Oeste</option>
+            <option value="Leste">Leste</option>
+            <option value="Norte">Norte</option>
+            <option value="Central">Central</option>
+            <option value="Sul">Sul</option>
+          </select>
+        </div>
+        
+        <div class="item4">
+          <label for="registrarEnderecoCorridaMotorista">Endereço</label>
+          <input
+            id="registrarEnderecoCorridaMotorista"
+            class="input-estilizado"
+            type="text"
+            placeholder="Endereço"
+            required
+          />
+        </div>
+      </div>
+
+      <input type="submit" value="PUBLICAR" class="btnPublicar" />
+    </form>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+      <p>© 2024 Caroneiros- Todos os direitos reservados.</p>
+    </footer>
+  </body>
 </html>
