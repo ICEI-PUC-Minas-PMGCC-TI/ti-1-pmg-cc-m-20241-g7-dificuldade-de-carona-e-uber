@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="/codigo/assets/css/minhas_caronas.css">
 
     <!-- Conexão com página de javascript/json -->
-    <script type="text/javascript" src="/codigo/assets/scripts/minhas_caronas.js"></script>
-    <script type="text/javascript" src="/codigo/assets/scripts/minhas_caronas.json"></script>
+    <script type="text/javascript" src="/codigo/assets/json/js_json_minhas_caronas/minhas_caronas.js"></script>
+    <script type="text/javascript" src="/codigo/assets/json/js_json_minhas_caronas/minhas_caronas.json"></script>
 
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,34 +46,34 @@
         <div id="overlay" class="overlay" style="display: none;"></div>
         <div id="editFormContainer" style="display: none;">
             <form id="editForm" onsubmit="salvarEdicao(event)">
-                <input type="hidden" id="editUserId">
-                <label for="editUserName">Nome:</label>
-                <input type="text" id="editUserName" required>
-
-                <label for="editUserType">Tipo:</label>
-                <select id="editUserType">
+                <input type="hidden" id="editPostId">
+                <label for="editPostName">Nome:</label>
+                <input type="text" id="editPostName" required>
+        
+                <label for="editPostType">Tipo:</label>
+                <select id="editPostType">
                     <option value="Motorista">Motorista</option>
                     <option value="Passageiro(a)">Passageiro(a)</option>
                 </select>
-
-                <label for="editUserDescription">Descrição:</label>
-                <textarea id="editUserDescription" required></textarea>
-
-                <label for="editUserZone">Zona:</label>
-                <select id="editUserZone">
+        
+                <label for="editPostDescription">Descrição:</label>
+                <textarea id="editPostDescription" required></textarea>
+        
+                <label for="editPostZone">Zona:</label>
+                <select id="editPostZone">
                     <option value="Oeste">Oeste</option>
                     <option value="Leste">Leste</option>
                     <option value="Norte">Norte</option>
-                    <option value="Leste">Central</option>
-                    <option value="Leste">Sul</option>
+                    <option value="Central">Central</option>
+                    <option value="Sul">Sul</option>
                 </select>
-
-                <label for="editUserAddress">Endereço:</label>
-                <input type="text" id="editUserAddress" required>
-
-                <label for="editUserValue">Valor:</label>
-                <select id="editUserValue">
-                    <option value="05.00">R$ 5,00</option>
+        
+                <label for="editPostAddress">Endereço:</label>
+                <input type="text" id="editPostAddress" required>
+        
+                <label for="editPostValue">Valor:</label>
+                <select id="editPostValue">
+                    <option value="5.00">R$ 5,00</option>
                     <option value="10.00">R$ 10,00</option>
                     <option value="15.00">R$ 15,00</option>
                     <option value="20.00">R$ 20,00</option>
@@ -83,10 +83,11 @@
                     <option value="40.00">R$ 40,00</option>
                     <option value="45.00">R$ 45,00</option>
                     <option value="50.00">R$ 50,00</option>
+                    <option value=""></option>
                 </select>
-
-                <label for="editUserTime">Horário chegada:</label>
-                <select id="editUserTime">
+        
+                <label for="editPostTime">Horário chegada:</label>
+                <select id="editPostTime">
                     <option value="06:30">06:30</option>
                     <option value="07:00">07:00</option>
                     <option value="07:30">07:30</option>
@@ -120,11 +121,13 @@
                     <option value="21:30">21:30</option>
                     <option value="22:00">22:00</option>
                 </select>
-
+        
                 <button type="submit">Salvar</button>
                 <button type="button" onclick="cancelarEdicao()">Cancelar</button>
             </form>
         </div>
+        
+        
 
 
 

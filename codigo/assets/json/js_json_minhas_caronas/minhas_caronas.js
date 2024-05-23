@@ -5,7 +5,7 @@ let usersData = [];
 let currentUserPosts = [];
 
 // Carregar os dados dos usuários e exibir os posts do usuário com id 1 inicialmente
-fetch('http://127.0.0.1:5501/codigo/assets/scripts/minhas_caronas.json')
+fetch('http://127.0.0.1:5501/codigo/assets/json/js_json_minhas_caronas/minhas_caronas.json')
 
   .then(response => response.json())
   .then(data => {
@@ -49,6 +49,7 @@ function exibirPosts(posts) {
                         <li><strong>Zona:</strong> ${post.zone}</li>
                         <li><strong>Valor:</strong> ${formattedValue}</li>
                         <li><strong>Endereço:</strong> ${post.address}</li>
+                        <li><strong>Horário de chegada:</strong> ${post.time}</li>
                     </ul>
                 </div>
                 <div id="botoes_editar_excluir">
@@ -80,16 +81,20 @@ function editarPost(postId) {
 
     if (post) {
         document.getElementById('editPostId').value = post.id;
-        document.getElementById('editPostType').value = post.type;
-        document.getElementById('editPostDescription').value = post.description;
-        document.getElementById('editPostZone').value = post.zone;
-        document.getElementById('editPostAddress').value = post.address;
-        document.getElementById('editPostValue').value = post.value;
+        document.getElementById('editPostName').value = post.name || '';
+        document.getElementById('editPostType').value = post.type || '';
+        document.getElementById('editPostDescription').value = post.description || '';
+        document.getElementById('editPostZone').value = post.zone || '';
+        document.getElementById('editPostAddress').value = post.address || '';
+        document.getElementById('editPostValue').value = post.value || '';
+        document.getElementById('editPostTime').value = post.time || '';
 
         document.getElementById('overlay').style.display = 'block';
         document.getElementById('editFormContainer').style.display = 'block';
     }
 }
+
+
 
 // Função para salvar a edição de um post
 function salvarEdicao(event) {
@@ -101,6 +106,7 @@ function salvarEdicao(event) {
     const zone = document.getElementById('editPostZone').value;
     const address = document.getElementById('editPostAddress').value;
     const value = parseFloat(document.getElementById('editPostValue').value);
+    const time = document.getElementById('editPostTime').value; // Verifique esta linha
 
     const postIndex = currentUserPosts.findIndex(function(p) {
         return p.id === id;
@@ -112,6 +118,7 @@ function salvarEdicao(event) {
         currentUserPosts[postIndex].zone = zone;
         currentUserPosts[postIndex].address = address;
         currentUserPosts[postIndex].value = value;
+        currentUserPosts[postIndex].time = time; // Atualizamos o valor do tempo
 
         exibirPosts(currentUserPosts);
 
@@ -119,6 +126,8 @@ function salvarEdicao(event) {
         document.getElementById('overlay').style.display = 'none';
     }
 }
+
+
 
 // Função para cancelar a edição
 function cancelarEdicao() {
