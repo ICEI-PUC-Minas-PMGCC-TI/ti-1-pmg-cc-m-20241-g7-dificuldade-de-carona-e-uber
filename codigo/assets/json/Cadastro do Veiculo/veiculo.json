@@ -1,9 +1,9 @@
 {
     "carro": {
-      "placa": "",
-      "marca": "",
-      "modelo": "",
-      "ano": ""
+      "placa": "ABC-1234",
+      "marca": "Chevrolet",
+      "modelo": "Celta",
+      "ano": "2014"
     }
   }
   
