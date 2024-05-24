@@ -188,8 +188,12 @@ a {
   padding: 0.8rem 3rem;
   margin-top: 1.2rem;
   border-radius: 0.9rem;
-  transition: transform .5s ease-in-out;
   border: none;
+  transition: transform .5s ease-in-out;
+}
+
+.btnPublicar:hover{
+  transform: scale(1.1);
 }
 
 /* CORPO postPassageiro.html */
