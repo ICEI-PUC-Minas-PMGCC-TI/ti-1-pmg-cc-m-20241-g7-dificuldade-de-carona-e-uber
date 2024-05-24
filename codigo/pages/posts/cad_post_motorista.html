@@ -51,7 +51,7 @@
     <!-- CORPO DA PÁGINA -->
 
     <form
-      id="meuFormulario"
+      id="formCadastroPostMotorista"
       action="./caronas.html"
       method="get"
       class="popup_criacao_postMotorista"
@@ -68,17 +68,17 @@
 
       <div class="inputsForm">
         <div class="item1">
-          <label for="registrarDescricaoCorridaMotorista">Descrição</label>
+          <label for="campoDescricao">Descrição</label>
           <textarea
-            id="registrarDescricaoCorridaMotorista"
+            id="campoDescricao"
             placeholder="Descrição"
             class="input-estilizado"
             required
           ></textarea>
         </div>
         <div class="item2">
-          <label for="registrarZonaCorridaMotorista">Zonas</label>
-          <select id="registrarZonaCorridaMotorista" class="input-estilizado" required>
+          <label for="campoZonas">Zonas</label>
+          <select id="campoZonas" class="input-estilizado" required>
             <option value="" selected></option>
             <option value="Oeste">Oeste</option>
             <option value="Leste">Leste</option>
@@ -88,8 +88,8 @@
           </select>
         </div>
         <div class="item3">
-          <label for="registrarValorCorridaMotorista">Valor</label>
-          <select id="registrarValorCorridaMotorista" class="input-estilizado" required>
+          <label for="campoValorCorrida">Valor</label>
+          <select id="campoValorCorrida" class="input-estilizado" required>
             <option value="" selected></option>
             <option value="--">--</option>
             <option value="05.00">R$ 5,00</option>
@@ -105,9 +105,9 @@
           </select>
         </div>
         <div class="item4">
-          <label for="registrarEnderecoCorridaMotorista">Endereço</label>
+          <label for="campoEndereco">Endereço</label>
           <input
-            id="registrarEnderecoCorridaMotorista"
+            id="campoEndereco"
             class="input-estilizado"
             type="text"
             placeholder="Endereço"
@@ -116,12 +116,18 @@
         </div>
       </div>
 
-      <input type="submit" value="PUBLICAR" class="btnPublicar" />
+      <input
+        type="submit"
+        id="btnPublicaPostMotorista"
+        value="PUBLICAR"
+        class="btnPublicar"
+      />
     </form>
 
     <!-- RODAPÉ -->
     <footer class="rodape">
       <p>© 2024 Caroneiros- Todos os direitos reservados.</p>
     </footer>
+    <script src="../../assets/json/js_posts/postsMotorista.js"></script>
   </body>
 </html>

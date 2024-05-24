@@ -1,0 +1,24 @@
+{
+  "PostsMotoristas": [
+    {
+      "id": 1,
+      "nome": "Beutrano",
+      "tipo": "Motorista",
+      "descricao": "Estou disposto a oferecer carona, fazer novas amizades",
+      "valor": "Negociável",
+      "zonascarona": "Oeste e Noroeste",
+      "endereco": "Rua José Freitas 12 - Jardim"
+    }
+  ],
+
+  "PostsPassageiros": [
+    {
+      "id": 1,
+      "nome": "Ciclana",
+      "tipo": "Passageiro(a)",
+      "descricao": "Preciso de carona e estou disposta a rachar a corrida",
+       "zonascarona": "Oeste",
+      "endereco": "Rua Lauro Ferrera 132 - Buritis"
+    }
+  ] 
+}
