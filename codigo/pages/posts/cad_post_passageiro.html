@@ -51,7 +51,7 @@
     <!-- CORPO DA PÁGINA -->
 
     <form
-      id="meuFormulario"
+      id="formCadastroPostPassageiro"
       action="./caronas.html"
       method="get"
       class="popup_criacao_postPassageiro"
@@ -68,17 +68,17 @@
 
       <div class="inputsForm2">
         <div class="item1">
-          <label for="registrarDescricaoCorridaMotorista">Descrição</label>
+          <label for="campoDescricao">Descrição</label>
           <textarea
-            id="registrarDescricaoCorridaMotorista"
+            id="campoDescricao"
             placeholder="Descrição"
             class="input-estilizado"
             required
           ></textarea>
         </div>
         <div class="item2">
-          <label for="registrarZonaCorridaMotorista">Zonas</label>
-          <select id="registrarZonaCorridaMotorista" class="input-estilizado" required>
+          <label for="campoZonas">Zonas</label>
+          <select id="campoZonas" class="input-estilizado" required>
             <option value="" selected></option>
             <option value="Oeste">Oeste</option>
             <option value="Leste">Leste</option>
@@ -87,11 +87,11 @@
             <option value="Sul">Sul</option>
           </select>
         </div>
-        
+
         <div class="item4">
-          <label for="registrarEnderecoCorridaMotorista">Endereço</label>
+          <label for="campoEndereco">Endereço</label>
           <input
-            id="registrarEnderecoCorridaMotorista"
+            id="campoEndereco"
             class="input-estilizado"
             type="text"
             placeholder="Endereço"
@@ -100,12 +100,18 @@
         </div>
       </div>
 
-      <input type="submit" value="PUBLICAR" class="btnPublicar" />
+      <input
+        type="submit"
+        id="btnPublicaPostPassageiro"
+        value="PUBLICAR"
+        class="btnPublicar"
+      />
     </form>
 
     <!-- RODAPÉ -->
     <footer class="rodape">
       <p>© 2024 Caroneiros- Todos os direitos reservados.</p>
     </footer>
+    <script src="../../assets/json/js_posts/postsPassageiro.js"></script>
   </body>
 </html>
