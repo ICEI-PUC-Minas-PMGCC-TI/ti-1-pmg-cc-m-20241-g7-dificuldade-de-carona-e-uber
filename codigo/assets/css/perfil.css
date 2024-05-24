@@ -9,7 +9,7 @@
 }
 
 #bodyhomepage{
-    background-color: #00000027;
+    background-color: #ffffff;
     
 }
 
@@ -165,7 +165,7 @@ section .box {
     background-color: #ffffff;
     padding: 20px;
     border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 20%);
     width: 700px;
     height: 400px; /* Altura desejada */
     display: flex; /* Adiciona display flex */

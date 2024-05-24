@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 alert("Login realizado com sucesso! Você será redirecionado para a página inicial.");
 
                 // Redireciona para a página inicial após o login bem-sucedido
-                window.location.href = "/codigo/index.html";
+                window.location.href = "/codigo/inicio.html";
             } else {
                 // Exibe um pop-up de erro
                 alert("E-mail ou senha incorretos. Por favor, verifique seus dados e tente novamente.");
