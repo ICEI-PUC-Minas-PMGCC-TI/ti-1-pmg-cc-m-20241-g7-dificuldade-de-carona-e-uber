@@ -1,7 +1,6 @@
 fetch('./veiculo.json')
   .then(response => response.json())
   .then(data => {
-    // Manipular o JSON aqui
   })
   .catch(error => console.error('Erro ao carregar o JSON:', error));
 
