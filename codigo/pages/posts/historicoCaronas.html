@@ -5,9 +5,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Caroneiros</title>
+    <title>Caroneiros - Histórico de </title>
     <!-- Conexão com página de css -->
-    <link rel="stylesheet" href="/codigo/assets/css/posts.css" />
+    <link rel="stylesheet" href="/codigo/assets/css/historicoCaronas.css" />
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,19 +29,17 @@
         <div class="menu">
           <a href="/codigo/inicio.html">
             <img
-              src="/codigo/assets/images/imagens_pagina_caronas/logo_casa.png"
+              src="/codigo/assets/images/home-button.png"
             />
           </a>
-          <a href="../perfil/bruna_crud-cadastro-veiculo.html">
-            <!-- COLOCAR O LINK PARA PÁGINA DE PERFIL -->
+          <a href="../perfil/bruna_crud-cadastro-veiculo.html"> 
             <img
-              src="/codigo/assets/images/imagens_pagina_caronas/logo_perfil.png"
+              src="/codigo/assets/images/profile.png"
             />
           </a>
-          <a href="./historicoCaronas.html">
-            <!-- COLOCAR O LINK PARA PÁGINA DE HISTÓRICO -->
+          <a href="./caronas.html">
             <img
-              src="/codigo/assets/images/imagens_pagina_caronas/logo_historico.png"
+              src="/codigo/assets/images/car.png"
             />
           </a>
         </div>
@@ -49,24 +47,19 @@
     </header>
 
     <!-- CORPO DA PÁGINA -->
-    <div class="popup_selecao_post">
-      <h1>Publicar Post</h1>
-      <a href="./cad_post_motorista.html">MOTORISTA</a>
-      <a href="./cad_post_passageiro.html">PASSAGEIRO</a>
-      <div class="voltarButton">
-        <a href="./caronas.html">
-          <img
-            src="/codigo/assets/images/posts/speedtrack.png"
-            alt="Rastro Veículo Alta Velocidade"
-          />
-          Voltar
-        </a>
+    <main>
+      <h1>HISTÓRICO DE VIAGENS</h1>
+      <hr>
+      <div id="cards_container">
+        
       </div>
-    </div>
+     
+    </main>
 
     <!-- RODAPÉ -->
     <footer class="rodape">
       <p>© 2024 Caroneiros- Todos os direitos reservados.</p>
     </footer>
+    <script src="../../assets/json/js_historicoCaronas/historicoCaronas.js"></script>
   </body>
 </html>

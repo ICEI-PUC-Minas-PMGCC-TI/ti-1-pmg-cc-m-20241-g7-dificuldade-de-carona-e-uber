@@ -63,8 +63,8 @@ a {
   border: black 1px solid;
   border-radius: 1rem;
   width: 330px;
-  height: 450px;
-  margin-top: 2rem;
+  height: 400px;
+  margin-top: 3rem;
   padding: 1rem;
   text-align: center;
   display: grid;
@@ -241,6 +241,7 @@ a {
   align-items: center;
   justify-content: center;
   position: fixed;
+  text-align: center;
   left: 0;
   bottom: 0;
   min-height: 10vh;
@@ -249,14 +250,84 @@ a {
   color: #fff;
 }
 
-/* RESPONSIVIDADE
+/* RESPONSIVIDADE */
 
 
+@media screen and (max-width: 767px){
+  header{
+    height: 25vh;
+  }
 
-PENDENTE
+  .menu > a > img {
+    display: none;
+  }
+
+  .popup_selecao_post{
+    margin-top: 3rem;
+    width: 300px;
+    max-height: 350px;
+  }
 
 
+}
 
-*/
+@media screen and (max-width: 991px) {
+  
+  header{
+    height: 25vh;
+  }
 
+  .cabecalho{
+    text-align: center;
+    margin: 0;
+  }
+
+  .logo{
+    margin: 0;
+  }
+
+  .menu{
+    display: flex;
+    width: 35%;
+    padding: 0;
+  }
+
+  .menu > a > img {
+    width: 70%;
+    height: 70%;
+  }
+
+
+  .popup_selecao_post{
+    margin-top: 3rem;
+    max-width: 330px;
+    height: 400px;
+
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  
+  header{
+    height: 25vh;
+  }
+
+  .logo{
+    margin: 0;
+  }
+
+  .popup_selecao_post{
+    margin-top: 3rem;
+    max-width: 330px;
+    height: 400px;
+
+  }
+
+  .menu{
+    display: flex;
+    width: 35%;
+    padding: 0;
+  }
+
+}
 
