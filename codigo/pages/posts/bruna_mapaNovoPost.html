@@ -1,20 +1,27 @@
-<!-- OTÁVIO -->
+<!-- BRUNA -->
 
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feed</title>
+    <title>Mapa</title>
     <!-- Conexão com página de css -->
-    <link rel="stylesheet" href="/codigo/assets/css/pagina_caronas.css">
+    <link rel="stylesheet" href="/codigo/assets/css/mapas.css">
+    <!-- Conexão com página de js -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script type="module" src="/codigo/assets/json/mapas/mapas.js"></script>
+    <script defer src=""></script>
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
-<body>
+<body id="bodyhomepage">
+
     <header>  
         <!--CABEÇALHO-->
         <div class="cabecalho">
@@ -36,29 +43,20 @@
             </div>
         </div>
     </header>
-    <div class="opcoes">
-        <div class="filtrar_mcorridas">
-            <div class="filtrar">
-                <h1>Filtrar</h1>
-            </div>
-            <div class="minhas_corridas">
-                <h1>Minhas Corridas</h1>
-            </div>
+
+    <main>
+        <div id="map">
+            <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+            defer
+            ></script>
         </div>
-            <div class="botao_mais">
-                <a href="postEscolha.html">
-                    <h1>+</h1>
-                </a>
-        </div>
-    </div>
-    <hr class="linha">
-    <div id="cards_container"></div>
+    </main>
+    
     <footer class="rodape">
         <p>
             © 2024 Caroneiros- Todos os direitos reservados.
         </p>
     </footer>
-    <script src="/codigo/assets/json/js_json_pagina_caronas/pagina_caronas.json"></script> <!-- ESTÁTICO -->
-    <script src="/codigo/assets/json/js_json_pagina_caronas/pagina_caronas_app.js"></script> <!-- AJUSTAR -->
 </body>
 </html>
