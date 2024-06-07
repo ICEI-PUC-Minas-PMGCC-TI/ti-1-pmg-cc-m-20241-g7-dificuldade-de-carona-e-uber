@@ -77,7 +77,7 @@ header a{
 }
 
 header a:hover{
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 header .menu{
@@ -325,16 +325,11 @@ header .logo img {
 
 /* RODAPÉ */
 
-.rodape {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  text-align: center;
+
 footer.rodape {
   background-color: rgba(1, 35, 64, 0.7);
   color: #fff;
-  /*position: fixed;*/
+  position: fixed;
   padding: 3px;
   left: 0;
   bottom: 0;

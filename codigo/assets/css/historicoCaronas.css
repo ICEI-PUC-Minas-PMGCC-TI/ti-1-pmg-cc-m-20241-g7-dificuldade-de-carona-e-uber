@@ -10,56 +10,137 @@
 
 /* CABEÇALHO */
 
-header {
-  background-color: #001b2e;
+header{
+  background-color: #012340; 
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-left: 120px;
+  padding-right: 120px;
+  margin-left: 0;
+  margin-right: 0;
   box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);
-  width: 100vw;
-  min-height: 18vh;
 }
 
+@media (max-width: 1300px) {
+  header {
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-left: 40px;
+      padding-right: 40px;
+  }
+}
 
-.cabecalho {
-  padding: 1rem;
+@media (max-width: 560px) {
+  header {
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+}
+
+header > .cabecalho{
   display: flex;
   align-items: center;
-  justify-content: end;
-  text-align: center;
-}
-
-
-.logo {
-  margin-right: 20rem;
-  transition: transform 0.3s ease-in-out;
-}
-
-.logo:hover{
-  transform: scale(1.1);
-
-}
-
-.logo > a > img {
-  width: 250px;
-}
-
-.menu {
-  padding-right: 10rem;
-  display: flex;  
   justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
-
-.menu> a > img{
-  width: 80%;
-  height: 80%;
-  transition: transform 0.3s ease-in-out;
+@media (max-width: 560px) {
+  header > .cabecalho{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      padding-right: 0;
+      padding-left: 0;
+  }
 }
 
-.menu > a > img:hover {
-  transform: scale(1.2);
-}
-
-a {
+header a{
+  color: #fff;
   text-decoration: none;
+  display: inline-block;
+  transition: .4s;
+}
+
+header a:hover{
+  transform: scale(1.1);
+}
+
+header .menu{
+  justify-content: flex-end;
+  padding:10px 20px;
+  outline: none;
+  cursor: pointer;
+}
+
+header .menu a {
+  margin-right: 10px;
+}
+
+header .menu a:last-child {
+  margin-right: 0;
+}
+
+header .logo {
+  cursor: pointer;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(7%);
+}
+
+header .logo img {
+  width: 250px;
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 690px) {
+  header .logo {
+      transform: translateX(-5%);
+  }
+}
+
+@media (max-width: 568px) {
+  header .logo img {
+      width: 200px;
+  }
+}
+
+@media (max-width: 560px) {
+  header .logo {
+      margin-left: -80px;
+      transform: translateX(2%);
+  }
+}
+
+@media (max-width: 480px) {
+  header .logo {
+      padding-left: 30px;
+  }
+  header .logo img {
+      width: 180px;
+  }
+  header .menu{
+      transform: translateX(2%);
+  }
+  
+  header .menu a img{
+      width: 40px;
+  }
 }
 
 
@@ -68,8 +149,7 @@ main{
   display: flex;
   flex-direction: column;
   text-align: center;
-  align-items: center;
-  justify-content: center;
+
 }
 
 main > h1{
@@ -135,17 +215,16 @@ main > hr{
 
 /* RODAPÉ */
 
-.rodape {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+footer.rodape {
+  background-color: rgba(1, 35, 64, 0.7);
+  color: #fff;
   position: fixed;
+  padding: 3px;
   left: 0;
   bottom: 0;
-  min-height: 10vh;
-  width: 100vw;
-  background-color: #001b2e;
-  color: #fff;
+  width: 100%;
+  text-align: center;
+  font-size: 11px;
 }
 
 /* RESPONSIVIDADE
