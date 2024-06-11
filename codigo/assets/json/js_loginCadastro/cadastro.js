@@ -30,4 +30,6 @@ document.getElementById('cadastroForm').addEventListener('submit', function(even
 
     // Limpar o formulário
     document.getElementById('cadastroForm').reset();
+
+    window.location.href = '../perfil/bruno_crud-login.html';
 });
