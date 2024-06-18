@@ -1,0 +1,238 @@
+*{
+    font-family: "Inter", sans-serif;
+}
+body{
+    background-color: #f2f2f2;
+}
+.icon_caronas{
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   gap: 200%;
+    align-items: center;
+}
+
+#logo{
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+
+}
+
+#filtrosSection{
+    margin: 50px;
+
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+#filtrosp{
+    font-size: xx-large;
+}
+
+#boxFiltros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   
+}
+
+#bordas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 700px;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: #013868;
+    background-color: white;
+    border-width: 3px;
+}
+
+#dropdownsForm{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 100px 100px;
+    padding: 30px;
+    gap: 170px;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex_labeleselect{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex_labeleselect select {
+    background-color: #51b1ec;
+    color:black;
+    width: 300px;
+    height: 60px;
+    margin: 10px;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: #4780b3;
+    border-width: 3px;
+    font-size: larger;
+    cursor: pointer;
+}
+
+#Filtrarbutton{
+    background-color: #20638C;
+    color: #f2f2f2;
+    width: 200px;
+    height: 50px;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: #013868;
+    border-width: 3px;
+    font-size: larger;
+    cursor: pointer;
+}
+
+#dropdownsForm .flex_labeleselect{
+    width: 200px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#botoes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: 50px;
+}
+
+
+#clearFiltersButton{
+    background-color: #f2f2f2;
+   
+    color: #20638C;
+    width: 200px;
+    height: 50px;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: #013868;
+    border-width: 3px;
+    font-size: larger;
+    cursor: pointer;
+}
+
+
+#espacointernopost{
+    display: flex;
+    justify-content: c;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+ 
+    
+}
+
+#postsFiltrados{
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 550px 550px 550px;
+    gap: 50px;
+    padding: 20px;
+    justify-content: center;
+    margin-bottom: 10%;
+   
+
+}
+
+
+.postexemplo{
+    background-color: white;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    margin: auto;
+    width: 500px;
+    height: 350px;
+    border-color: #013868;
+}
+
+.img_perfil{
+    width: 70px;
+    height: 70px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 15px;
+    border-color: #013868;
+}
+
+#foto_nome, #foto_nome_tipo, #tipo_motorista_passageiro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+#foto_nome_tipo{
+    display: flex;
+    margin-bottom: 20px;
+    gap: 100px;
+    width: 100%;
+
+    
+}
+#foto_nome{
+    
+    gap: 15px;
+    width: 100%;
+
+}
+
+#tipo_motorista_passageiro{
+    gap: 15px;
+
+}
+
+#descricao_post ul{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+#descricao_post{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 95%;
+    height: 200px;
+    
+}
+
+footer.rodape {
+    background-color: rgba(1, 35, 64, 0.7);
+    color: #fff;
+    /*position: fixed;*/
+    padding: 3px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 11px;
+}
