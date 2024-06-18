@@ -169,6 +169,14 @@ body {
     display: flex;
 }
 
+.filtrar > a{
+    text-decoration: none;
+}
+
+.minhas_corridas > a{
+    text-decoration: none;
+}
+
 .opcoes {
     display:flex;
     justify-content: space-between;
@@ -187,9 +195,13 @@ body {
 
 .opcoes .filtrar_mcorridas h1:hover {
     color: #d9d9d9;
-    background-color: #012340;
+    background-color: #012340; /* AJUSTAR OU TIRAR A COR */
     transform: scale(1.15);
     transition: 0.7s;
+}
+
+.botao_mais > a{
+    text-decoration: none;
 }
 
 .botao_mais h1 {
@@ -200,7 +212,7 @@ body {
     padding-top: 0.2em;
     padding-bottom: 0.2em;
     border-radius: 50px;
-    font-size: 2em;
+    font-size: 2em; /* AJUSTAR O TAMANHO */
     color: #012340;
 }
 
@@ -208,7 +220,7 @@ body {
     transform: scale(1.30);
     transition: 0.7s;
     color: #d9d9d9;
-    background-color: #012340;
+    background-color: #012340; /* AJUSTAR OU TIRAR A COR */
 }
 
 .corridas {

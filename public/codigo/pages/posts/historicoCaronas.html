@@ -5,9 +5,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Posts</title>
+    <title>Histórico de Caronas</title>
     <!-- Conexão com página de css -->
-    <link rel="stylesheet" href="/codigo/assets/css/posts.css" />
+    <link rel="stylesheet" href="/codigo/assets/css/historicoCaronas.css" />
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,8 +18,8 @@
   </head>
 
   <body>
+    <!-- CABEÇALHO -->
     <header>  
-      <!--CABEÇALHO-->
       <div class="cabecalho">
           <div class="logo">
               <a href="/codigo/pages/posts/caronas.html">
@@ -33,34 +33,27 @@
               <a class="ir-para-perfil" href="/codigo/pages/perfil/bruna_crud-cadastro-veiculo.html">
                   <img src="/codigo/assets/images/profileeeee.png">
               </a>
-              <a class="ir-para-historico" href="historicoCaronas.html">
-                  <img src="/codigo/assets/images/perfil/historico.png">
+              <a class="ir-para-historico" href="caronas.html">
+                  <img src="/codigo/assets/images/perfil/car.png">
               </a>
           </div>
       </div>
   </header>
 
     <!-- CORPO DA PÁGINA -->
-    <div class="popup_selecao_post">
-      <h1>Publicar Post</h1>
-      <a href="./cad_post_motorista.html">MOTORISTA</a>
-      <a href="./cad_post_passageiro.html">PASSAGEIRO</a>
-      <div class="voltarButton">
-        <a href="./caronas.html">
-          <img
-            src="/codigo/assets/images/posts/speedtrack.png"
-            alt="Rastro Veículo Alta Velocidade"
-          />
-          Voltar
-        </a>
+    <main>
+      <h1>HISTÓRICO DE VIAGENS</h1>
+      <hr>
+      <div id="cards_container">
+        
       </div>
-    </div>
+      
+    </main>
 
     <!-- RODAPÉ -->
     <footer class="rodape">
-      <p>
-          © 2024 Caroneiros- Todos os direitos reservados.
-      </p>
-  </footer>
+      <p>© 2024 Caroneiros- Todos os direitos reservados.</p>
+    </footer>
+    <script src="../../assets/json/js_historicoCaronas/historicoCaronas.js"></script>
   </body>
 </html>

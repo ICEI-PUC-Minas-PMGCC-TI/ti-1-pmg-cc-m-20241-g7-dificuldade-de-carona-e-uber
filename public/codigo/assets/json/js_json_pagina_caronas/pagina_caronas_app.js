@@ -14,7 +14,7 @@ fetch('/codigo/assets/json/js_json_pagina_caronas/pagina_caronas.json')
                     <p>Zona: ${person.zone}</p>
                     <p>Endereço: ${person.address}</p>
                 </div>
-                <button>Contatar</button>
+                <button >Contatar</button>
             </div>
         `;
         container.innerHTML += cardHTML;
@@ -67,6 +67,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+// Variável para contar quantos botões foram criados
+let contadorBotoes = 1;
+
 // Função para criar um card com as informações do post
 function criarCard(post) {
     let card = document.createElement('div');
@@ -96,5 +99,56 @@ function criarCard(post) {
         card.appendChild(valor);
     }
 
+    // Adiciona o botão "Contatar" com um ID único
+    let botaoContatar = document.createElement('button');
+    botaoContatar.textContent = 'Contatar';
+    botaoContatar.id = `contatar_${contadorBotoes}`; // Usa o contador para gerar um ID único
+    contadorBotoes++; // Incrementa o contador para o próximo botão
+    botaoContatar.classList.add('contatar-button'); // Adiciona uma classe se necessário
+    card.appendChild(botaoContatar);
+
     return card;
 }
+
+document.addEventListener('click', function(event) {
+    if (event.target && event.target.classList.contains('contatar-button')) {
+        let botaoContatar = event.target;
+        let postId = botaoContatar.id.split('_')[1]; // Obtém o ID do post do ID do botão
+
+        // Obtém os dados do post do localStorage
+        let posts = JSON.parse(localStorage.getItem('Posts'));
+        let post = null;
+        
+        // Procura o post entre os motoristas
+        if (posts && posts.PostsMotoristas) {
+            post = posts.PostsMotoristas.find(post => post.id === parseInt(postId));
+            if (post) {
+                // Marca o post como contatado
+                post.contatado = true;
+
+                // Atualiza o localStorage com os novos dados do post
+                localStorage.setItem('Posts', JSON.stringify(posts));
+
+                // Redireciona para a próxima página
+                window.location.href = 'historicoCaronas.html';
+            }
+        }
+        
+        // Se não encontrou entre os motoristas, procura entre os passageiros
+        if (!post && posts && posts.PostsPassageiros) {
+            post = posts.PostsPassageiros.find(post => post.id === parseInt(postId));
+            if (post) {
+                // Marca o post como contatado
+                post.contatado = true;
+
+                // Atualiza o localStorage com os novos dados do post
+                localStorage.setItem('Posts', JSON.stringify(posts));
+
+                // Redireciona para a próxima página
+                window.location.href = 'historicoCaronas.html';
+            }
+        }
+    }
+});
+
+
