@@ -1,0 +1,170 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtros</title>
+
+    <!-- Conexão com página de css -->
+    <link rel="stylesheet" href="/codigo/assets/css/filtros.css">
+   
+
+     <!-- Conexão com página de javascript/json -->
+     <script src="/codigo/assets/json/js_json_Filtros/filtros.js"></script>
+
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+     <!-- CABEÇALHO -->
+     <header style="background-color: #001B2E;">
+        <div class="interface" style="display: flex; justify-content: center;">
+            <!--Logo-->
+            <div class="logo">
+                <a href="#homepage">
+                    <div class="caroneiros">
+                        <img id="logo" src="https://i.postimg.cc/mgDZ6PTk/logo-header-minhascaronas-page.png" alt="Logo">
+                    </div>
+                </a>
+
+                <a href="#caronas">
+                    <div>
+                        <img class="icon_caronas" src="https://i.postimg.cc/vmNZwcSq/icon-carro.png" alt="Página Caronas">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- FILTROS -->
+     <section id="filtrosSection">
+        <p id="filtrosp">Filtros disponíveis:</p>
+
+        <section id="boxFiltros"> 
+        <div id="bordas">
+
+            <form id="form">
+                <div id="dropdownsForm">
+                    <div class="flex_labeleselect">
+                        <label for="FilterTime">Horário de chegada:</label>
+                        <select id="FilterTime" placeholder="Escolha uma opção:">
+                            <option value="" disabled selected>Selecione uma opção</option>
+                            <option value="06:30">06:30</option>
+                            <option value="07:00">07:00</option>
+                            <option value="07:30">07:30</option>
+                            <option value="08:00">08:00</option>
+                            <option value="08:30">08:30</option>
+                            <option value="09:00">09:00</option>
+                            <option value="09:30">09:30</option>
+                            <option value="10:00">10:00</option>
+                            <option value="10:30">10:30</option>
+                            <option value="11:00">11:00</option>
+                            <option value="11:30">11:30</option>
+                            <option value="12:00">12:00</option>
+                            <option value="12:30">12:30</option>
+                            <option value="13:00">13:00</option>
+                            <option value="13:30">13:30</option>
+                            <option value="14:00">14:00</option>
+                            <option value="14:30">14:30</option>
+                            <option value="15:00">15:00</option>
+                            <option value="15:30">15:30</option>
+                            <option value="16:00">16:00</option>
+                            <option value="16:30">16:30</option>
+                            <option value="17:00">17:00</option>
+                            <option value="17:30">17:30</option>
+                            <option value="18:00">18:00</option>
+                            <option value="18:30">18:30</option>
+                            <option value="19:00">19:00</option>
+                            <option value="19:30">19:30</option>
+                            <option value="20:00">20:00</option>
+                            <option value="20:30">20:30</option>
+                            <option value="21:00">21:00</option>
+                            <option value="21:30">21:30</option>
+                            <option value="22:00">22:00</option>
+                        </select>
+                    </div>
+
+                    <div class="flex_labeleselect">
+                        <label for="FilterZone">Ponto de partida (Destino PUC - Coreu)</label>
+                        <select id="FilterZone">
+                            <option value="" disabled selected>Selecione uma opção</option>
+                            <option value="Oeste">Oeste</option>
+                            <option value="Leste">Leste</option>
+                            <option value="Norte">Norte</option>
+                            <option value="Central">Central</option>
+                            <option value="Sul">Sul</option>
+                        </select>
+                    </div>
+
+                    <div class="flex_labeleselect">
+                        <label for="FilterValue">Valor:</label>
+                        <select id="FilterValue">
+                            <option value="" disabled selected>Selecione uma opção</option>
+                            <option value="5.00">R$ 5,00</option>
+                            <option value="10.00">R$ 10,00</option>
+                            <option value="15.00">R$ 15,00</option>
+                            <option value="20.00">R$ 20,00</option>
+                            <option value="25.00">R$ 25,00</option>
+                            <option value="30.00">R$ 30,00</option>
+                            <option value="35.00">R$ 35,00</option>
+                            <option value="40.00">R$ 40,00</option>
+                            <option value="45.00">R$ 45,00</option>
+                            <option value="50.00">R$ 50,00</option>
+                        </select>
+                    </div>
+
+                    <div class="flex_labeleselect">
+                        <label for="Filtertype">Tipo:</label>
+                        <select id="Filtertype">
+                            <option value="" disabled selected>Selecione uma opção</option>
+                            <option value="Motorista">Motorista/Caroneiro</option>
+                            <option value="Passageiro(a)">Passageiro(a)</option>
+                        </select>
+                    </div>
+
+                    <div class="flex_labeleselect">
+                        <label for="Filtergender">Gênero</label>
+                        <select id="Filtergender">
+                            <option value="" disabled selected>Selecione uma opção</option>
+                            <option value="Mulher">Mulher</option>
+                            <option value="Homem">Homem</option>
+                            <option value="Homem">Indiferente</option>
+                        </select>
+                    </div>
+            </div>
+            <div id="botoes">
+                <button type="submit" id="Filtrarbutton"><strong>Filtrar</strong></button>
+                <button type="button" id="clearFiltersButton"><strong>Limpar Filtros</strong> </button> <!-- Botão de limpar filtros -->
+            </div>
+            </form>
+            
+        </div>
+        
+        </section>
+
+
+     </section>
+
+    <!-- POSTS FILTRADOS -->
+
+    <section id="postsFiltrados">
+    </section>
+
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+        <p>
+            © 2024 Caroneiros- Todos os direitos reservados.
+        </p>
+    </footer>
+</body>
+
+</html>
