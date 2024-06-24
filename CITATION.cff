@@ -5,24 +5,30 @@ title:
 authors:
   - family-names: Almeida
     given-names: Felipe
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names:
+  - family-names: Belchior
+    given-names: Marcella
+  - family-names: Furtado
+    given-names: Bruna
+  - family-names: Alejandro
+    given-names: Bruno
+  - family-names: Monteiro
+    given-names: Otávio 
   - name-suffix: Professor
     affiliation: PUC Minas
     family-names: Carneiro
     given-names: Rommel
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Costa
+    given-names: Pedro
+ - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Diniz
+    given-names: Luciana
+ - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Caetano
+    given-names: João
 keywords:
   - Mobilidade Urbana
 repository-code: 
