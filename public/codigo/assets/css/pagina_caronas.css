@@ -92,7 +92,7 @@ header a{
 }
 
 header a:hover{
-    transform: scale(1.05);
+    transform: scale(1.15);
 }
 
 header .menu{
@@ -106,9 +106,6 @@ header .menu a {
     margin-right: 10px;
 }
 
-header .menu a:last-child {
-    margin-right: 0;
-}
 
 header .logo {
     cursor: pointer;
@@ -116,7 +113,7 @@ header .logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateX(7%);
+    transform: translateX(2%);
 }
 
 header .logo img {
@@ -243,48 +240,104 @@ body {
     grid-template-columns: auto auto;
 }
 
-.card {
-    width: 35em;
+#cards_container {
     display: flex;
-    background-color: #f1f1f1;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Estilo básico para cada card */
+.card {
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    background-color: white;
+}
+
+.card p {
+    margin: 10px;
+    line-height: 1.5;
+    color: #333;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; /* Centraliza horizontalmente os elementos dentro do card */
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 300px;
+    background-color: white;
+    padding: 10px; /* Adiciona um pouco de padding dentro do card */
+    box-sizing: border-box; /* Inclui o padding na largura e altura total */
+}
+
+.tipo-valor-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centraliza verticalmente */
+    width: 100%; /* Garante que o container ocupe toda a largura do card */
+}
+
+.tipo-valor-container p {
+    flex: 1; /* Faz com que cada parágrafo ocupe um espaço igual dentro do container */
+    text-align: center; /* Centraliza o texto horizontalmente dentro de seu container */
+    margin: 5px; /* Diminui a margem para mais controle */
+}
+
+.card p {
+    width: 100%; /* Faz cada parágrafo ocupar a largura total do card */
+    text-align: center; /* Centraliza o texto de todos os parágrafos */
+}
+
+.contatar-button {
+    width: 90%; /* Slightly smaller width to fit within the padding */
     padding: 10px;
-    margin-left: 10em;
-    margin-right: 10em;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    align-items: center;
-}
-
-.card:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
-}
-
-.card img {
-    border-radius: 50%;
-    margin-right: 10px;
-}
-
-.card .details {
-    flex-grow: 1;
-}
-
-.card button {
-    margin-right: 2em;
-    margin-left: 2em;
-    padding: 10px 20px;
-    background-color: #001b2e;
+    border-radius: 5px;
+    background-color: #007bff;
     color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contatar-button:hover {
+    background-color: #0056b3;
+}
+/* Botão Contatar dentro do card */
+.contatar-button {
+    display: block;
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.card button:hover {
-    transition: 0.3s;
-    background-color: #007BFF;
+.contatar-button:hover {
+    background-color: #0056b3;
+}
+
+.tipo-valor-container {
+    display: flex;
+    justify-content: center; /* Ajusta o espaçamento entre tipo e valor */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.tipo-valor-container p {
+    margin: 10px; /* Espaçamento uniforme */
 }
 
 ::-webkit-scrollbar {
