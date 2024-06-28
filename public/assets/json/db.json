@@ -151,34 +151,6 @@
             "genero": "Indiferente",
             "profile_img": "https://i.postimg.cc/0QYFsTTp/maria.png"
         }
-    ],
-    "locais": [
-        {
-          "id": 1,
-          "descricao": "PUC Minas - Coração Eucarístico",
-          "endereco": "Rua Dom José Gaspar, 500",
-          "favorito": true,
-          "cidade": "Belo Horizonte",
-          "latlong": [
-            -43.992911,
-            -19.923564
-          ],
-          "url": "https://www.pucminas.br",
-          "cor": "red"
-        },
-        {
-          "id": 2,
-          "descricao": "PUC Minas - Praça da Liberdade",
-          "endereco": "Av. Brasil, 2023 - Funcionários",
-          "favorito": false,
-          "cidade": "Belo Horizonte",
-          "latlong": [
-            -43.9397233,
-            -19.9332786
-          ],
-          "url": "https://www.pucminas.br/unidade/praca-da-liberdade/Paginas/default.aspx",
-          "cor": "red"
-        }
-      ]
+    ]
   }
   
