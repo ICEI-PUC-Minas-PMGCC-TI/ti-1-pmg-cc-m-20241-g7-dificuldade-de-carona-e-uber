@@ -1,0 +1,381 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    box-sizing:border-box;
+}
+
+#bodyhomepage{
+    background-color: #012340;
+    
+}
+
+.interface{
+    max-width: 1350px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex{
+    display: flex;
+}
+
+/*ESTILO HEADER*/
+
+header{
+    background-color: #012340;
+    position: fixed; 
+    display:block;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-left: 120px;
+    padding-right: 120px;
+    margin-left: 0;
+    margin-right: 0;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);
+}
+
+@media (max-width: 1300px) {
+    header {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 560px) {
+    header {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+header > .cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+@media (max-width: 560px) {
+    header > .cabecalho{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+header a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    transition: .4s;
+}
+
+header a:hover{
+    transform: scale(1.15);
+}
+
+header .menu{
+    justify-content: flex-end;
+    padding:10px 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+header .menu a {
+    margin-right: 10px;
+}
+
+
+header .logo {
+    cursor: pointer;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(2%);
+}
+
+header .logo img {
+    width: 250px;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 690px) {
+    header .logo {
+        transform: translateX(-5%);
+    }
+}
+
+@media (max-width: 568px) {
+    header .logo img {
+        width: 200px;
+    }
+}
+
+@media (max-width: 560px) {
+    header .logo {
+        margin-left: -80px;
+        transform: translateX(2%);
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo {
+        padding-left: 30px;
+    }
+    header .logo img {
+        width: 180px;
+    }
+    header .menu{
+        transform: translateX(2%);
+    }
+    
+    header .menu a img{
+        width: 40px;
+    }
+}
+
+body {
+    background-color: #012340;
+}
+
+.filtrar_mcorridas{
+    display: flex;
+}
+
+.filtrar > a{
+    text-decoration: none;
+}
+
+.minhas_corridas > a{
+    text-decoration: none;
+}
+
+.opcoes {
+    display:flex;
+    justify-content: space-between;
+    margin-top: 13em;
+}
+
+.opcoes .filtrar_mcorridas h1 {
+    color: #012340;
+    background-color: #d9d9d9;
+    padding: 0.5em;
+    border-radius: 50px;
+    text-align: center;
+    margin-left: 3.5em;
+    font-size: 1.4em;
+}
+
+.opcoes .filtrar_mcorridas h1:hover {
+    color: #d9d9d9;
+    background-color: #012340; /* AJUSTAR OU TIRAR A COR */
+    transform: scale(1.15);
+    transition: 0.7s;
+}
+
+.opcoes a{
+    text-decoration: none;
+}
+
+.botao_mais h1 {
+    margin-right: 6.9em;
+    background-color: #d9d9d9;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    border-radius: 50px;
+    font-size: 2em; /* AJUSTAR O TAMANHO */
+    color: #012340;
+}
+
+.botao_mais h1:hover{
+    transform: scale(1.30);
+    transition: 0.7s;
+    color: #d9d9d9;
+    background-color: #012340; /* AJUSTAR OU TIRAR A COR */
+}
+
+.corridas {
+    height: 30em;
+    margin-top: 2em;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-bottom: 2em;
+    background-color: #001b2e;
+    border-radius: 10%;
+}
+
+
+.linha {
+    margin: 2em;
+}
+
+#cards_container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#cards_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Estilo básico para cada card */
+.card {
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    background-color: white;
+}
+
+.card p {
+    margin: 10px;
+    line-height: 1.5;
+    color: #333;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; /* Centraliza horizontalmente os elementos dentro do card */
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 300px;
+    background-color: white;
+    padding: 10px; /* Adiciona um pouco de padding dentro do card */
+    box-sizing: border-box; /* Inclui o padding na largura e altura total */
+}
+
+.tipo-valor-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centraliza verticalmente */
+    width: 100%; /* Garante que o container ocupe toda a largura do card */
+}
+
+.tipo-valor-container p {
+    flex: 1; /* Faz com que cada parágrafo ocupe um espaço igual dentro do container */
+    text-align: center; /* Centraliza o texto horizontalmente dentro de seu container */
+    margin: 5px; /* Diminui a margem para mais controle */
+}
+
+.card p {
+    width: 100%; /* Faz cada parágrafo ocupar a largura total do card */
+    text-align: center; /* Centraliza o texto de todos os parágrafos */
+}
+
+.contatar-button {
+    width: 90%; /* Slightly smaller width to fit within the padding */
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contatar-button:hover {
+    background-color: #0056b3;
+}
+/* Botão Contatar dentro do card */
+.contatar-button {
+    display: block;
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contatar-button:hover {
+    background-color: #0056b3;
+}
+
+.tipo-valor-container {
+    display: flex;
+    justify-content: center; /* Ajusta o espaçamento entre tipo e valor */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.tipo-valor-container p {
+    margin: 10px; /* Espaçamento uniforme */
+}
+
+::-webkit-scrollbar {
+    width: 8px;  
+    height: 8px; 
+}
+
+
+::-webkit-scrollbar-track {
+    background: #012340; 
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #d9d9d9; 
+    border-radius: 4px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #585858; 
+}
+
+body h1, h2, p {
+    font-family: 'Inter';
+}
+
+.card img {
+    margin-right: 2em;
+    margin-left: 2em;
+}
+
+footer.rodape {
+    background-color: rgba(1, 35, 64, 0.7);
+    color: #fff;
+    padding: 3px;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    font-size: 11px;
+}

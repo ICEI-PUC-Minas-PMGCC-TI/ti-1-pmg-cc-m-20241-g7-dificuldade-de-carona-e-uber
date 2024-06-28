@@ -5,9 +5,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Post do Passageiro</title>
+    <title>Post do Motorista</title>
     <!-- Conexão com página de css -->
-    <link rel="stylesheet" href="/codigo/assets/css/posts.css" />
+    <link rel="stylesheet" href="/public/assets/css/posts.css" />
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,19 +22,19 @@
       <!--CABEÇALHO-->
       <div class="cabecalho">
           <div class="logo">
-              <a href="/codigo/pages/posts/caronas.html">
-                  <img src="/codigo/assets/images/logo2.png">
+              <a href="/public/pages/posts/caronas.html">
+                  <img src="/public/codigo/assets/images/logo2.png">
               </a>
           </div>
           <div class="menu">
-              <a class="ir-para-homepage" href="/codigo/inicio.html">
-                  <img src="/codigo/assets/images/perfil/homepage.png">
+              <a class="ir-para-homepage" href="/public/inicio.html">
+                  <img src="/public/assets/images/perfil/homepage.png">
               </a>
-              <a class="ir-para-perfil" href="/codigo/pages/perfil/bruna_crud-cadastro-veiculo.html">
-                  <img src="/codigo/assets/images/profileeeee.png">
+              <a class="ir-para-perfil" href="/public/pages/perfil/bruna_crud-cadastro-veiculo.html">
+                  <img src="/public/assets/images/profileeeee.png">
               </a>
               <a class="ir-para-historico" href="historicoCaronas.html">
-                  <img src="/codigo/assets/images/perfil/historico.png">
+                  <img src="/public/assets/images/perfil/historico.png">
               </a>
           </div>
       </div>
@@ -43,22 +43,22 @@
     <!-- CORPO DA PÁGINA -->
 
     <form
-      id="formCadastroPostPassageiro"
+      id="formCadastroPostMotorista"
       action="./caronas.html"
       method="get"
-      class="popup_criacao_postPassageiro"
+      class="popup_criacao_postMotorista"
     >
       <div class="tituloForm">
-        <h1>Novo Post - Passageiro</h1>
+        <h1>Novo Post - Motorista</h1>
         <a href="./postEscolha.html" class="closePopupButton">
           <img
-            src="/codigo/assets/images/posts/closeX.png"
+            src="/public/assets/images/posts/closeX.png"
             alt="Rastro Veículo Alta Velocidade"
           />
         </a>
       </div>
 
-      <div class="inputsForm2">
+      <div class="inputsForm">
         <div class="item1">
           <label for="campoDescricao">Descrição</label>
           <textarea
@@ -79,7 +79,23 @@
             <option value="Sul">Sul</option>
           </select>
         </div>
-
+        <div class="item3">
+          <label for="campoValorCorrida">Valor</label>
+          <select id="campoValorCorrida" class="input-estilizado" required>
+            <option value="" selected></option>
+            <option value="--">--</option>
+            <option value="05.00">R$ 5,00</option>
+            <option value="10.00">R$ 10,00</option>
+            <option value="15.00">R$ 15,00</option>
+            <option value="20.00">R$ 20,00</option>
+            <option value="25.00">R$ 25,00</option>
+            <option value="30.00">R$ 30,00</option>
+            <option value="35.00">R$ 35,00</option>
+            <option value="40.00">R$ 40,00</option>
+            <option value="45.00">R$ 45,00</option>
+            <option value="50.00">R$ 50,00</option>
+          </select>
+        </div>
         <div class="item4">
           <label for="campoEndereco">Endereço</label>
           <input
@@ -94,7 +110,7 @@
 
       <input
         type="submit"
-        id="btnPublicaPostPassageiro"
+        id="btnPublicaPostMotorista"
         value="PUBLICAR"
         class="btnPublicar"
       />
@@ -106,6 +122,6 @@
           © 2024 Caroneiros- Todos os direitos reservados.
       </p>
   </footer>
-    <script src="../../assets/json/js_posts/postsPassageiro.js"></script>
+    <script src="../../assets/json/js_posts/postsMotorista.js"></script>
   </body>
 </html>

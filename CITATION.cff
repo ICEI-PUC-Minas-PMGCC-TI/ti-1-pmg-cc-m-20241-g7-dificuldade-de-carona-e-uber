@@ -3,29 +3,35 @@ cff-version: 1.0.1
 message: Please cite this software using these metadata.
 title: 
 authors:
-  - family-names: Almeida
+  - family-names: Barros Ratton de Almeida
     given-names: Felipe
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names:
+  - family-names: Santos Belchior
+    given-names: Marcella
+  - family-names: Furtado da Fonseca
+    given-names: Bruna
+  - family-names: Alejandro Montero Comisso Coelho
+    given-names: Bruno
+  - family-names: Augusto de Assis Ferreira Monteiro
+    given-names: Otávio 
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: Carneiro
+    family-names: Vieira Carneiro
     given-names: Rommel
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Henrique Ramos Costa
+    given-names: Pedro
+ - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Mara Freitas Diniz
+    given-names: Luciana
+ - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Carlos Oliveira Caetano
+    given-names: João
 keywords:
   - Mobilidade Urbana
-repository-code: 
+repository-code: https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-m-20241-g7-dificuldade-de-carona-e-uber
 license: CC-BY-4.0
 version: 1.0.0
 date-released: 2022-07-14
