@@ -5,7 +5,7 @@
   "description": "Projeto TI 1",
   "main": "index.html",
   "scripts": {
-      "start": "node ./public/codigo/server.js"
+      "start": "node ./public/codigo/index.js"
   },
   "keywords": [],
   "author": "Grupo 7 - Dificuldade de Carona e Uber",

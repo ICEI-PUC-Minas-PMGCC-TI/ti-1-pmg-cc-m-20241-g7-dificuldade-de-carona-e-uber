@@ -3,7 +3,7 @@ const path = require('path');
 const cors = require('cors');
 
 const server = jsonServer.create();
-const router = jsonServer.router('./public/codigo/assets/json/db.json');
+const router = jsonServer.router('./public/assets/json/db.json');
 const middlewares = jsonServer.defaults();
 
 // Middleware para permitir CORS
