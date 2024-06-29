@@ -10,26 +10,51 @@ document.getElementById('cadastroForm').addEventListener('submit', function(even
     const dataNascimento = document.getElementById('cadastro-data-nascimento').value;
     const senha = document.getElementById('senhaCadastro').value;
 
-    // Criar objeto usuário
-    const usuario = {
-        nome: nome,
-        cpf: cpf,
-        telefone: telefone,
-        email: email,
-        sexo: sexo,
-        dataNascimento: dataNascimento,
-        senha: senha
-    };
+    // Buscar os usuários existentes para determinar o próximo ID
+    fetch('http://localhost:3000/users')
+        .then(response => response.json())
+        .then(data => {
+            // Encontrar o maior ID existente e incrementar
+            const maxId = data.length > 0 ? Math.max(...data.map(user => user.id)) : 0;
+            const newId = maxId + 1;
 
-    // Salvar no Local Storage
-    localStorage.setItem('usuario', JSON.stringify(usuario));
+            // Criar objeto usuário com o novo ID
+            const usuario = {
+                id: newId,
+                name: nome,
+                cpf: cpf,
+                telefone: telefone,
+                email: email,
+                sexo: sexo,
+                dataNascimento: dataNascimento,
+                senha: senha
+            };
 
-    // Mensagem de sucesso
-    document.getElementById('msg').innerText = 'Usuário cadastrado com sucesso!';
-    document.getElementById('msg').style.color = 'green';
+            // Enviar os dados para o servidor JSON
+            return fetch('http://localhost:3000/users', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(usuario)
+            });
+        })
+        .then(response => response.json())
+        .then(data => {
+            // Mensagem de sucesso
+            document.getElementById('msg').innerText = 'Usuário cadastrado com sucesso!';
+            document.getElementById('msg').style.color = 'green';
 
-    // Limpar o formulário
-    document.getElementById('cadastroForm').reset();
+            // Limpar o formulário
+            document.getElementById('cadastroForm').reset();
 
-    window.location.href = '../perfil/bruno_crud-login.html';
+            // Redirecionar para a página de login
+            window.location.href = '../perfil/bruno_crud-login.html';
+        })
+        .catch(error => {
+            console.error('Erro:', error);
+            // Mensagem de erro
+            document.getElementById('msg').innerText = 'Erro ao cadastrar usuário!';
+            document.getElementById('msg').style.color = 'red';
+        });
 });
