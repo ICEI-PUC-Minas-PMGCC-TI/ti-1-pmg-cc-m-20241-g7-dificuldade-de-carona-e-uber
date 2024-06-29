@@ -7,6 +7,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
     // Buscar os usuários no servidor JSON
     fetch('http://localhost:3000/users')
+    
         .then(response => response.json())
         .then(users => {
             // Verificar se o usuário existe e se a senha está correta
