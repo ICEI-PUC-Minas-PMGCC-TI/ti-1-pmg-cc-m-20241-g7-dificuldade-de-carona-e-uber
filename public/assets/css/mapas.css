@@ -165,19 +165,30 @@ header .logo img {
 
 /*BODY*/
 
-#map {
-    height: 100%;
-  }
-  
-  /* 
-   * Optional: Makes the sample page fill the window. 
-   */
-  html,
-  body {
-    height: 100%;
+body, html {
     margin: 0;
     padding: 0;
-  }
+    height: 100%;
+    overflow: hidden;
+}
+#map {
+    position: absolute;
+    top: 170px;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 568px) {
+    #map {
+        top: 140px;
+    }
+}
+
+@media (max-width: 480px) {
+    #map {
+        top: 130px;
+    }
+}
 
 /* RODAPÉ */
 
@@ -187,7 +198,7 @@ footer.rodape {
     position: fixed;
     padding: 3px;
     left: 0;
-    bottom: 0;
+    bottom: -15px;
     width: 100%;
     text-align: center;
     font-size: 11px;

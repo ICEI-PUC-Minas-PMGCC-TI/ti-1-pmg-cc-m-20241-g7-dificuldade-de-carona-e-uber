@@ -10,11 +10,9 @@ Aperte os cintos e se prepare para se tornar um Caroneiro!
 
 * Felipe Barros Ratton de Almeida
 * Bruno Alejandro Monteiro Commisso Coelho 
-* David Alves Mares Costa 
 * Otávio Augusto de Assis Ferreira Monteiro 
 * Bruna Furtado da Fonseca
-* Marcella Santos Belchior
-* Ravy Lima Ribeiro 
+* Marcella Santos Belchior 
 
 ## Professores responsáveis
 

@@ -1,9 +1,9 @@
-const jsonServer = require('json-server');
+/*const jsonServer = require('json-server');
 const path = require('path');
 const cors = require('cors');
 
 const server = jsonServer.create();
-const router = jsonServer.router('./public/codigo/assets/json/db.json');
+const router = jsonServer.router('./public/assets/json/db.json');
 const middlewares = jsonServer.defaults();
 
 // Middleware para permitir CORS
@@ -31,4 +31,4 @@ server.use(router);
 // Iniciando o servidor na porta 3000
 server.listen(3000, () => {
   console.log('JSON Server is running on http://localhost:3000');
-});
+});*/
