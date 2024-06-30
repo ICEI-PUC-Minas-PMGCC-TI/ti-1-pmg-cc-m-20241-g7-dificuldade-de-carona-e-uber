@@ -1,40 +1,35 @@
 {
     "users": [
         {
-            "users": [
-                {
-                    "id": 1,
-                    "name": "Mariana Silva",
-                    "cpf": "222.222.222-22",
-                    "telefone": "3198900-4432",
-                    "email": "dsad@gmail.com",
-                    "sexo": "masculino",
-                    "dataNascimento": "20/03/2004",
-                    "senha": "dsadsa"
-                },
-                {
-                    "id": 2,
-                    "name": "Robson Vasconcelos",
-                    "cpf": "333.333.333-33",
-                    "telefone": "3199000-5543",
-                    "email": "robson@gmail.com",
-                    "sexo": "masculino",
-                    "dataNascimento": "15/05/1990",
-                    "senha": "robson123"
-                },
-                {
-                    "id": 3,
-                    "name": "Maria Belmont",
-                    "cpf": "444.444.444-44",
-                    "telefone": "3198111-6677",
-                    "email": "maria@gmail.com",
-                    "sexo": "feminino",
-                    "dataNascimento": "10/12/1985",
-                    "senha": "maria123"
-                }
-            ]
+            "id": 1,
+            "name": "Mariana Silva",
+            "cpf": "222.222.222-22",
+            "telefone": "3198900-4432",
+            "email": "dsad@gmail.com",
+            "sexo": "masculino",
+            "dataNascimento": "2004-03-20",
+            "senha": "dsadsa"
+        },
+        {
+            "id": 2,
+            "name": "Robson Vasconcelos",
+            "cpf": "333.333.333-33",
+            "telefone": "3199000-5543",
+            "email": "robson@gmail.com",
+            "sexo": "masculino",
+            "dataNascimento": "1990-05-15",
+            "senha": "robson123"
+        },
+        {
+            "id": 3,
+            "name": "Maria Belmont",
+            "cpf": "444.444.444-44",
+            "telefone": "3198111-6677",
+            "email": "maria@gmail.com",
+            "sexo": "feminino",
+            "dataNascimento": "1985-12-10",
+            "senha": "maria123"
         }
-        
     ],
     "posts": [
         {

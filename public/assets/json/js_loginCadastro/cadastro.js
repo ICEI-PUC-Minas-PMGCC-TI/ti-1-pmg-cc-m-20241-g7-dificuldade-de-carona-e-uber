@@ -12,7 +12,12 @@ document.getElementById('cadastroForm').addEventListener('submit', function(even
 
     // Buscar os usuários existentes para determinar o próximo ID
     fetch('http://localhost:3000/users')
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Erro ao buscar usuários existentes: ' + response.statusText);
+            }
+            return response.json();
+        })
         .then(data => {
             // Encontrar o maior ID existente e incrementar
             const maxId = data.length > 0 ? Math.max(...data.map(user => user.id)) : 0;
@@ -39,7 +44,12 @@ document.getElementById('cadastroForm').addEventListener('submit', function(even
                 body: JSON.stringify(usuario)
             });
         })
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                return response.json().then(err => { throw new Error('Erro ao cadastrar usuário: ' + err.message); });
+            }
+            return response.json();
+        })
         .then(data => {
             // Mensagem de sucesso
             document.getElementById('msg').innerText = 'Usuário cadastrado com sucesso!';
