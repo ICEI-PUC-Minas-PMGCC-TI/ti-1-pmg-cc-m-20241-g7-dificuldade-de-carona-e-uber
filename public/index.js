@@ -6,6 +6,8 @@ const middlewares = jsonServer.defaults({
     readOnly: false 
   });
 
+
+
 server.use(middlewares)
 server.use(router)
 server.listen(3000, () => {

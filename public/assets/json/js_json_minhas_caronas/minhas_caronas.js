@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         currentUserPosts = JSON.parse(storedPosts);
         exibirPosts(currentUserPosts);
     } else {
-        fetch('http://127.0.0.1:5501/codigo/assets/json/js_json_minhas_caronas/minhas_caronas.json')
+        fetch('../../assets/json/js_json_minhas_caronas/minhas_caronas.json')
             .then(response => response.json())
             .then(data => {
                 usersData = data.users;

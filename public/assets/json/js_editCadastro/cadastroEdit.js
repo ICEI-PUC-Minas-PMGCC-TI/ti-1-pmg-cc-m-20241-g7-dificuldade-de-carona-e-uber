@@ -1,4 +1,4 @@
-fetch('./veiculo.json')
+fetch('../../assets/json/js_editCadastro/veiculo.json')
   .then(response => response.json())
   .then(data => {
   })
