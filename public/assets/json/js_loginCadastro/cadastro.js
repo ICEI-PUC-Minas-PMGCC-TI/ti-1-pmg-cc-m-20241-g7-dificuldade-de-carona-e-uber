@@ -1,5 +1,6 @@
 document.getElementById('cadastroForm').addEventListener('submit', function(event) {
     event.preventDefault();
+    const apiUrl = 'http://localhost:3000/users';
 
     // Coletar os valores dos campos do formulário
     const nome = document.getElementById('cadastro-nome').value;
@@ -11,7 +12,7 @@ document.getElementById('cadastroForm').addEventListener('submit', function(even
     const senha = document.getElementById('senhaCadastro').value;
 
     // Buscar os usuários existentes para determinar o próximo ID
-    fetch('http://localhost:3000/users')
+    fetch(apiUrl)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Erro ao buscar usuários existentes: ' + response.statusText);
@@ -36,7 +37,7 @@ document.getElementById('cadastroForm').addEventListener('submit', function(even
             };
 
             // Enviar os dados para o servidor JSON
-            return fetch('http://localhost:3000/users', {
+            return fetch(apiUrl, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
