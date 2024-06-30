@@ -1,10 +1,6 @@
 document.getElementById('loginForm').addEventListener('submit', function(event) {
     event.preventDefault();
-<<<<<<< Updated upstream
     const apiUrl = 'http://localhost:3000/users';
-=======
-    const apiUrl = 'http://localhost:3000/users'; // Usando a rota /posts diretamente
->>>>>>> Stashed changes
 
     // Coletar os valores dos campos do formulário
     const cpf = document.getElementById('cpf').value;
