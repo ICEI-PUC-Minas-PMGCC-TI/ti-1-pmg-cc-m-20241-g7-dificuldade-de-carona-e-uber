@@ -1,4 +1,4 @@
-fetch('../../assets/json/js_editCadastro/veiculo.json')
+fetch('http://localhost:3000/posts')
   .then(response => response.json())
   .then(data => {
   })

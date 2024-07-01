@@ -177,5 +177,21 @@
       "genero": "Indiferente",
       "profile_img": "https://i.postimg.cc/0QYFsTTp/maria.png"
     }
-  ]
+  ], 
+  "carro": [
+      {
+        "id": 1,
+        "placa": "ABC-1234",
+        "marca": "Chevrolet",
+        "modelo": "Celta",
+        "ano": "2014"
+      },
+      {
+        "id": 2,
+        "placa": "DEF-5678",
+        "marca": "RAM",
+        "modelo": "3500 Laramie",
+        "ano": "2023"
+      }
+    ]
 }
